@@ -1,23 +1,67 @@
-# 🏎️ Formula 1 Race Win Prediction
+# F1 Driver Skill Decomposition Engine
 
-![F1 ML Predictor](https://img.shields.io/badge/Status-Planning-blue) ![Python](https://img.shields.io/badge/Backend-Python%20%7C%20FastF1-yellow) ![Three.js](https://img.shields.io/badge/Frontend-Three.js%20%7C%20Next.js-black)
+![Status](https://img.shields.io/badge/Status-In%20Development-brightgreen) ![Python](https://img.shields.io/badge/Backend-Python%20%7C%20FastF1-yellow) ![Three.js](https://img.shields.io/badge/Frontend-Three.js%20%7C%20Next.js-black)
 
 ## Overview
-This project leverages Machine Learning to predict the probability of a driver winning a Formula 1 race. By analyzing complex historical data points such as driver performance, team capabilities, weather conditions, tire strategies, and qualifying positions, the system identifies the most critical factors leading to a victory.
 
-To make the data analysis engaging, the project features a **premium, scrollable 3D frontend interface** built with Three.js, immersing users in real-time telemetry and predictive statistics.
+This project uses Machine Learning to answer one of F1's most debated questions:
 
-## Highlights
-- **Data Engineering:** Automated extraction of historical lap times, sector data, and telemetry using the `FastF1` library.
-- **Predictive AI:** Robust machine learning models including Baseline Logistic Regression and advanced Gradient Boosted Trees (XGBoost/LightGBM) to forecast race outcomes.
-- **Immersive 3D UI:** A state-of-the-art web interface featuring scroll-driven 3D animations of F1 cars seamlessly blended with dynamic, glassmorphic data visualization.
+> **Who are the most skilled drivers, independent of the car they're driving?**
 
-## Project Structure
-- `claude.md` - Step-by-step prompts and architectural guidelines designed to assist in coding the project.
-- *More directories (Backend, Frontend, ML_Models) will be generated as the project advances.*
+Using per-meter telemetry, sector breakdowns, teammate comparisons, and tire degradation data from the FastF1 library, we decompose driver performance into measurable skill signals — then roll them into a season-by-season Elo-style driver rating.
 
-## How to Get Started
-If you are building out this project using an AI coding assistant (like Claude), refer directly to the detailed prompts in **`claude.md`**. They cover everything from the data pipeline construction to the stunning 3D UI deployment.
+The result is a system that can tell you not just who wins, but *why*, and whether a driver is overperforming or underperforming given their machinery.
 
 ---
-*Created as part of a CPSC 371 Project Proposal implementation roadmap.*
+
+## What Makes This Different From a Win Predictor
+
+A standard race win predictor just learns "whoever qualified P1 in the fastest car wins." That's not insight — it's memorization. This project goes deeper:
+
+| Skill Signal | What It Measures | Why It's Car-Independent |
+|---|---|---|
+| Qualifying gap to teammate | Raw one-lap pace | Same car, same conditions |
+| Sector delta (S1/S2/S3) | Where on track a driver is fast | Normalised within the same car |
+| Telemetry brake point | How late a driver brakes into corners | Driving style, not machinery |
+| Minimum corner speed | How much speed is carried through apexes | Car control under lateral load |
+| Throttle application point | How early a driver gets back on power | Confidence and car feel |
+| Tire degradation rate | How gently a driver manages rubber | Race craft, not car pace |
+
+---
+
+## ML Architecture
+
+- **Input**: Multi-season FastF1 data (qualifying + race sessions, 2018-2024)
+- **Core Model**: Gradient Boosted Trees (XGBoost/LightGBM) per skill dimension
+- **Rating System**: Elo-style cumulative driver rating updated each race weekend
+- **Output**: Per-driver skill profile — overall pace, high-speed vs technical bias, race craft score, and a "true talent" rating that strips out car advantage
+
+---
+
+## Frontend
+
+A premium, scroll-driven 3D interface built with Next.js and React Three Fiber:
+
+- A 3D F1 car navigates a stylized circuit as the user scrolls
+- Each section of track reveals a different skill dimension (brake points, sector times, tire curves)
+- Driver comparison cards with glassmorphic design and live telemetry overlays
+- Dark neon aesthetic inspired by real F1 engineer dashboards
+
+---
+
+## Project Structure
+
+```
+Formula1/
+├── data/           # FastF1 cache and processed datasets
+├── pipeline/       # Data extraction and feature engineering scripts
+├── models/         # Trained ML models and evaluation notebooks
+├── api/            # FastAPI backend serving skill ratings and telemetry
+├── frontend/       # Next.js + React Three Fiber interface
+├── explore.ipynb   # Dataset exploration and FastF1 walkthrough
+└── claude.md       # Step-by-step implementation roadmap
+```
+
+---
+
+*CPSC 371 Project — built on FastF1, XGBoost, and React Three Fiber.*
