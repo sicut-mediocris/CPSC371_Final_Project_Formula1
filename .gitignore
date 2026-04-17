@@ -1,0 +1,7 @@
+# FastF1 cache — too large for GitHub, regenerated locally by running the pipeline
+data/cache/
+
+# Python
+__pycache__/
+*.pyc
+.env
