@@ -5,9 +5,17 @@ For every race weekend, pairs each driver with their teammate (same team)
 and computes the qualifying pace delta. Aggregates per driver per season
 into a QualiRating — drivers who consistently beat their teammate score higher.
 
+Using a teammate as the baseline is the cleanest way to isolate driver skill:
+both drivers have the same car, same tyres, and race in the same conditions,
+so any gap is purely down to the driver.
+
 Outputs (written to ../data/):
     qualifying_ratings.parquet  — one row per driver per season
     teammate_gaps.parquet       — one row per driver per race weekend
+
+Charts (written to ../data/charts/):
+    quali_rating_YYYY.png       — top 10 rated drivers per season (2018-2024)
+    quali_rating_heatmap.png    — all seasons side-by-side for top 20 drivers
 
 Usage:
     python qualifying_analysis.py
@@ -53,7 +61,12 @@ def load_qualifying() -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 
 def get_best_quali_time(row) -> float | None:
-    """Return the best available qualifying time: Q3 > Q2 > Q1."""
+    """Return the best available qualifying time, preferring Q3 > Q2 > Q1.
+
+    We prefer the latest session because drivers typically push hardest in Q3
+    (higher stakes, less tyre conservation). If a driver was knocked out early,
+    we fall back to their Q2 or Q1 time so they still get a comparison.
+    """
     for col in ["Q3_s", "Q2_s", "Q1_s"]:
         if col in row.index and pd.notna(row[col]) and row[col] > 0:
             return row[col]
@@ -83,7 +96,8 @@ def build_teammate_gaps(df: pd.DataFrame) -> pd.DataFrame:
         if len(drivers) < 2:
             continue
 
-        # For teams with 3+ drivers (rare), take all pairwise combos
+        # Rare but real: mid-season substitutions sometimes put 3 drivers in one
+        # team entry. Taking all pairs avoids dropping data for the sub driver.
         driver_list = drivers.to_dict("records")
         for i, d1 in enumerate(driver_list):
             for d2 in driver_list[i + 1:]:
@@ -140,17 +154,20 @@ def compute_quali_ratings(gaps_df: pd.DataFrame) -> pd.DataFrame:
         .reset_index()
     )
 
-    # Only include drivers with at least 3 teammate comparisons
+    # Drop drivers with fewer than 3 comparisons — too small a sample to be meaningful
     agg = agg[agg["Races"] >= 3].copy()
 
-    # Normalise within each season so ratings are relative to that year's field
+    # Normalise within each season so a 2018 rating means "relative to 2018 grid",
+    # not some absolute benchmark that changes as the sport evolves.
     for year in agg["Year"].unique():
         mask = agg["Year"] == year
 
-        # Win rate component (0-100)
+        # Win rate: how often did this driver beat their teammate (0-100 scale)
         win_score = agg.loc[mask, "WinRate"] * 100
 
-        # Gap component: invert so smaller gap = higher score
+        # Gap component: invert so smaller average gap = higher score.
+        # We min-max scale within the season so the worst driver scores 0 and
+        # the best scores 100 — this makes seasons comparable.
         gap = agg.loc[mask, "AvgGapPct"]
         gap_min, gap_max = gap.min(), gap.max()
         if gap_max > gap_min:
@@ -158,6 +175,8 @@ def compute_quali_ratings(gaps_df: pd.DataFrame) -> pd.DataFrame:
         else:
             gap_score = pd.Series(50.0, index=gap.index)
 
+        # Win rate weighted higher (60%) because it's more robust to outlier laps.
+        # Gap size captures the margin of dominance — useful secondary signal.
         agg.loc[mask, "QualiRating"] = (win_score * 0.6 + gap_score * 0.4).round(1)
 
     agg = agg.sort_values(["Year", "QualiRating"], ascending=[True, False])

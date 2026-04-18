@@ -21,7 +21,6 @@ import time
 from pathlib import Path
 
 import fastf1
-import numpy as np
 import pandas as pd
 
 # ---------------------------------------------------------------------------
@@ -175,7 +174,9 @@ def collect_qualifying(session, year: int, round_num: int) -> pd.DataFrame | Non
                 df[f"{q}_s"] = _timedelta_to_seconds(df[q])
                 df.drop(columns=[q], inplace=True)
 
-        # Best qualifying time = fastest of Q3 → Q2 → Q1 (in that priority)
+        # Best qualifying time: Q3 takes priority because it represents a driver's
+        # peak effort lap. Drivers knocked out in Q1/Q2 fall back to their best
+        # available time so they're still represented in the dataset.
         time_cols = [c for c in ["Q3_s", "Q2_s", "Q1_s"] if c in df.columns]
         if time_cols:
             df["BestQualiTime_s"] = df[time_cols].min(axis=1)
