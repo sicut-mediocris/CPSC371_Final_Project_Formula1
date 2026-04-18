@@ -21145,3 +21145,2185 @@ Failed sessions (11):
 14:42:10  WARNING     2024 R21 R
 14:42:10  INFO      
 Pipeline complete.
+17:51:15  INFO      Seasons to collect: [2022, 2023, 2024]
+17:51:15  INFO      Cache directory: C:\Users\sukir\OneDrive\Desktop\VS Code\Formula1\data\cache
+17:51:15  INFO      Output directory: C:\Users\sukir\OneDrive\Desktop\VS Code\Formula1\data
+17:51:15  INFO      ============================================================
+17:51:15  INFO      Season: 2022
+17:51:15  INFO      ============================================================
+17:51:16  INFO      
+Round 01: Bahrain Grand Prix
+17:51:16  INFO        Loading Q session...
+17:51:16  INFO      Loading data for Bahrain Grand Prix - Qualifying [v3.8.1]
+17:51:16  INFO      Using cached data for session_info
+17:51:16  INFO      Using cached data for driver_info
+17:51:17  INFO      Using cached data for session_status_data
+17:51:17  INFO      Using cached data for track_status_data
+17:51:17  INFO      Using cached data for _extended_timing_data
+17:51:17  INFO      Using cached data for timing_app_data
+17:51:17  INFO      Processing timing data...
+17:51:18  INFO      Using cached data for weather_data
+17:51:18  INFO      Finished loading data for 20 drivers: ['16', '1', '55', '11', '44', '77', '20', '14', '63', '10', '31', '47', '4', '23', '24', '22', '27', '3', '18', '6']
+17:51:18  INFO        Q: collected 20 rows.
+17:51:18  INFO        Loading R session...
+17:51:18  INFO      Loading data for Bahrain Grand Prix - Race [v3.8.1]
+17:51:18  INFO      Using cached data for session_info
+17:51:18  INFO      Using cached data for driver_info
+17:51:18  INFO      Using cached data for session_status_data
+17:51:18  INFO      Using cached data for lap_count
+17:51:18  INFO      Using cached data for track_status_data
+17:51:18  INFO      Using cached data for _extended_timing_data
+17:51:18  INFO      Using cached data for timing_app_data
+17:51:18  INFO      Processing timing data...
+17:51:19  INFO      Using cached data for weather_data
+17:51:19  WARNING   Driver 16 completed the race distance 00:00.050000 before the recorded end of the session.
+17:51:19  INFO      Finished loading data for 20 drivers: ['16', '55', '44', '63', '20', '77', '31', '22', '14', '24', '47', '18', '23', '3', '4', '6', '27', '11', '1', '10']
+17:51:19  INFO        R: collected 1125 rows.
+17:51:50  INFO      
+Round 02: Saudi Arabian Grand Prix
+17:51:50  INFO        Loading Q session...
+17:51:50  INFO      Loading data for Saudi Arabian Grand Prix - Qualifying [v3.8.1]
+17:51:50  INFO      Using cached data for session_info
+17:51:50  INFO      Using cached data for driver_info
+17:51:50  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+17:51:50  INFO      Using cached data for session_status_data
+17:51:50  INFO      Using cached data for track_status_data
+17:51:50  INFO      Using cached data for _extended_timing_data
+17:51:50  INFO      Using cached data for timing_app_data
+17:51:50  INFO      Processing timing data...
+17:51:52  INFO      Using cached data for weather_data
+17:51:52  INFO      Finished loading data for 20 drivers: ['11', '16', '55', '1', '31', '63', '14', '77', '10', '20', '4', '3', '24', '47', '18', '44', '23', '27', '6', '22']
+17:51:52  INFO        Q: collected 20 rows.
+17:51:52  INFO        Loading R session...
+17:51:52  INFO      Loading data for Saudi Arabian Grand Prix - Race [v3.8.1]
+17:51:52  INFO      Using cached data for session_info
+17:51:52  INFO      Using cached data for driver_info
+17:51:52  INFO      Using cached data for session_status_data
+17:51:52  INFO      Using cached data for lap_count
+17:51:52  INFO      Using cached data for track_status_data
+17:51:52  INFO      Using cached data for _extended_timing_data
+17:51:52  INFO      Using cached data for timing_app_data
+17:51:52  INFO      Processing timing data...
+17:51:53  WARNING   No lap data for driver 22
+17:51:53  WARNING   No lap data for driver 47
+17:51:54  WARNING   Failed to perform lap accuracy check - all laps marked as inaccurate (driver 22)
+17:51:54  WARNING   Failed to perform lap accuracy check - all laps marked as inaccurate (driver 47)
+17:51:54  INFO      Using cached data for weather_data
+17:51:55  INFO      Finished loading data for 20 drivers: ['1', '16', '55', '11', '63', '31', '4', '10', '20', '44', '24', '27', '18', '23', '77', '14', '3', '6', '22', '47']
+17:51:55  INFO        R: collected 820 rows.
+17:52:26  INFO      
+Round 03: Australian Grand Prix
+17:52:26  INFO        Loading Q session...
+17:52:26  INFO      Loading data for Australian Grand Prix - Qualifying [v3.8.1]
+17:52:26  INFO      Using cached data for session_info
+17:52:26  INFO      Using cached data for driver_info
+17:52:26  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+17:52:26  INFO      Using cached data for session_status_data
+17:52:26  INFO      Using cached data for track_status_data
+17:52:26  INFO      Using cached data for _extended_timing_data
+17:52:26  INFO      Using cached data for timing_app_data
+17:52:26  INFO      Processing timing data...
+17:52:28  INFO      Using cached data for weather_data
+17:52:28  INFO      Finished loading data for 20 drivers: ['16', '1', '11', '4', '44', '63', '3', '31', '55', '14', '10', '77', '22', '24', '47', '23', '20', '5', '6', '18']
+17:52:28  INFO        Q: collected 20 rows.
+17:52:28  INFO        Loading R session...
+17:52:28  INFO      Loading data for Australian Grand Prix - Race [v3.8.1]
+17:52:28  INFO      Using cached data for session_info
+17:52:28  INFO      Using cached data for driver_info
+17:52:28  INFO      Using cached data for session_status_data
+17:52:28  INFO      Using cached data for lap_count
+17:52:28  INFO      Using cached data for track_status_data
+17:52:28  INFO      Using cached data for _extended_timing_data
+17:52:28  INFO      Using cached data for timing_app_data
+17:52:28  INFO      Processing timing data...
+17:52:30  INFO      Using cached data for weather_data
+17:52:30  WARNING   Driver 16 completed the race distance 00:00.140000 before the recorded end of the session.
+17:52:30  INFO      Finished loading data for 20 drivers: ['16', '11', '63', '44', '4', '3', '31', '77', '10', '23', '24', '18', '47', '20', '22', '6', '14', '1', '5', '55']
+17:52:30  INFO        R: collected 1045 rows.
+17:53:01  INFO      
+Round 04: Emilia Romagna Grand Prix
+17:53:01  INFO        Loading Q session...
+17:53:01  INFO      Loading data for Emilia Romagna Grand Prix - Qualifying [v3.8.1]
+17:53:01  INFO      Using cached data for session_info
+17:53:01  INFO      Using cached data for driver_info
+17:53:02  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+17:53:02  INFO      Using cached data for session_status_data
+17:53:02  INFO      Using cached data for track_status_data
+17:53:02  INFO      Using cached data for _extended_timing_data
+17:53:02  INFO      Using cached data for timing_app_data
+17:53:02  INFO      Processing timing data...
+17:53:04  INFO      Using cached data for weather_data
+17:53:04  INFO      Finished loading data for 20 drivers: ['1', '16', '4', '20', '14', '3', '11', '77', '5', '55', '63', '47', '44', '24', '18', '22', '10', '6', '31', '23']
+17:53:04  INFO        Q: collected 20 rows.
+17:53:04  INFO        Loading R session...
+17:53:04  INFO      Loading data for Emilia Romagna Grand Prix - Race [v3.8.1]
+17:53:04  INFO      Using cached data for session_info
+17:53:04  INFO      Using cached data for driver_info
+17:53:04  INFO      Using cached data for session_status_data
+17:53:04  INFO      Using cached data for lap_count
+17:53:04  INFO      Using cached data for track_status_data
+17:53:04  INFO      Using cached data for _extended_timing_data
+17:53:04  INFO      Using cached data for timing_app_data
+17:53:04  INFO      Processing timing data...
+17:53:07  INFO      Using cached data for weather_data
+17:53:07  INFO      Finished loading data for 20 drivers: ['1', '11', '4', '63', '77', '16', '22', '5', '20', '18', '23', '10', '44', '31', '24', '6', '47', '3', '14', '55']
+17:53:07  INFO        R: collected 1132 rows.
+17:53:38  INFO      
+Round 05: Miami Grand Prix
+17:53:38  INFO        Loading Q session...
+17:53:38  INFO      Loading data for Miami Grand Prix - Qualifying [v3.8.1]
+17:53:38  INFO      Using cached data for session_info
+17:53:38  INFO      Using cached data for driver_info
+17:53:38  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+17:53:39  INFO      Using cached data for session_status_data
+17:53:39  INFO      Using cached data for track_status_data
+17:53:39  INFO      Using cached data for _extended_timing_data
+17:53:39  INFO      Using cached data for timing_app_data
+17:53:39  INFO      Processing timing data...
+17:53:39  WARNING   No lap data for driver 31
+17:53:40  WARNING   Failed to perform lap accuracy check - all laps marked as inaccurate (driver 31)
+17:53:40  INFO      Using cached data for weather_data
+17:53:40  INFO      Finished loading data for 20 drivers: ['16', '55', '1', '11', '77', '44', '10', '4', '22', '18', '14', '63', '5', '3', '47', '20', '24', '23', '6', '31']
+17:53:40  INFO        Q: collected 20 rows.
+17:53:40  INFO        Loading R session...
+17:53:40  INFO      Loading data for Miami Grand Prix - Race [v3.8.1]
+17:53:40  INFO      Using cached data for session_info
+17:53:40  INFO      Using cached data for driver_info
+17:53:40  INFO      Using cached data for session_status_data
+17:53:40  INFO      Using cached data for lap_count
+17:53:40  INFO      Using cached data for track_status_data
+17:53:40  INFO      Using cached data for _extended_timing_data
+17:53:40  INFO      Using cached data for timing_app_data
+17:53:40  INFO      Processing timing data...
+17:53:42  INFO      Using cached data for weather_data
+17:53:42  INFO      Finished loading data for 20 drivers: ['1', '16', '55', '11', '63', '44', '77', '31', '23', '18', '14', '22', '3', '6', '47', '20', '5', '10', '4', '24']
+17:53:42  INFO        R: collected 1057 rows.
+17:54:13  INFO      
+Round 06: Spanish Grand Prix
+17:54:13  INFO        Loading Q session...
+17:54:13  INFO      Loading data for Spanish Grand Prix - Qualifying [v3.8.1]
+17:54:13  INFO      Using cached data for session_info
+17:54:13  INFO      Using cached data for driver_info
+17:54:14  INFO      Using cached data for session_status_data
+17:54:14  INFO      Using cached data for track_status_data
+17:54:14  INFO      Using cached data for _extended_timing_data
+17:54:14  INFO      Using cached data for timing_app_data
+17:54:14  INFO      Processing timing data...
+17:54:14  INFO      Using cached data for weather_data
+17:54:15  INFO      Finished loading data for 20 drivers: ['16', '1', '55', '63', '11', '44', '77', '20', '3', '47', '4', '31', '22', '10', '24', '5', '14', '18', '23', '6']
+17:54:15  INFO        Q: collected 20 rows.
+17:54:15  INFO        Loading R session...
+17:54:15  INFO      Loading data for Spanish Grand Prix - Race [v3.8.1]
+17:54:15  INFO      Using cached data for session_info
+17:54:15  INFO      Using cached data for driver_info
+17:54:15  INFO      Using cached data for session_status_data
+17:54:15  INFO      Using cached data for lap_count
+17:54:15  INFO      Using cached data for track_status_data
+17:54:15  INFO      Using cached data for _extended_timing_data
+17:54:15  INFO      Using cached data for timing_app_data
+17:54:15  INFO      Processing timing data...
+17:54:18  INFO      Using cached data for weather_data
+17:54:18  INFO      Finished loading data for 20 drivers: ['1', '11', '63', '55', '44', '77', '31', '4', '14', '22', '5', '3', '10', '47', '18', '6', '20', '23', '24', '16']
+17:54:18  INFO        R: collected 1230 rows.
+17:54:49  INFO      
+Round 07: Monaco Grand Prix
+17:54:49  INFO        Loading Q session...
+17:54:49  INFO      Loading data for Monaco Grand Prix - Qualifying [v3.8.1]
+17:54:49  INFO      Using cached data for session_info
+17:54:49  INFO      Using cached data for driver_info
+17:54:49  INFO      Using cached data for session_status_data
+17:54:49  INFO      Using cached data for track_status_data
+17:54:49  INFO      Using cached data for _extended_timing_data
+17:54:49  INFO      Using cached data for timing_app_data
+17:54:49  INFO      Processing timing data...
+17:54:51  INFO      Using cached data for weather_data
+17:54:51  INFO      Finished loading data for 20 drivers: ['16', '55', '11', '1', '4', '63', '14', '44', '5', '31', '22', '77', '20', '3', '47', '23', '10', '18', '6', '24']
+17:54:51  INFO        Q: collected 20 rows.
+17:54:51  INFO        Loading R session...
+17:54:51  INFO      Loading data for Monaco Grand Prix - Race [v3.8.1]
+17:54:51  INFO      Using cached data for session_info
+17:54:51  INFO      Using cached data for driver_info
+17:54:51  INFO      Using cached data for session_status_data
+17:54:51  INFO      Using cached data for lap_count
+17:54:51  INFO      Using cached data for track_status_data
+17:54:51  INFO      Using cached data for _extended_timing_data
+17:54:51  INFO      Using cached data for timing_app_data
+17:54:51  INFO      Processing timing data...
+17:54:51  WARNING   Fixed incorrect tyre stint information for driver '11'
+17:54:51  WARNING   Fixed incorrect tyre stint information for driver '55'
+17:54:51  WARNING   Fixed incorrect tyre stint information for driver '1'
+17:54:51  WARNING   Fixed incorrect tyre stint information for driver '16'
+17:54:51  WARNING   Fixed incorrect tyre stint information for driver '63'
+17:54:52  WARNING   Fixed incorrect tyre stint information for driver '4'
+17:54:52  WARNING   Fixed incorrect tyre stint information for driver '14'
+17:54:52  WARNING   Fixed incorrect tyre stint information for driver '44'
+17:54:52  WARNING   Fixed incorrect tyre stint information for driver '77'
+17:54:52  WARNING   Fixed incorrect tyre stint information for driver '5'
+17:54:52  WARNING   Fixed incorrect tyre stint information for driver '10'
+17:54:52  WARNING   Fixed incorrect tyre stint information for driver '31'
+17:54:52  WARNING   Fixed incorrect tyre stint information for driver '3'
+17:54:52  WARNING   Fixed incorrect tyre stint information for driver '18'
+17:54:52  WARNING   Fixed incorrect tyre stint information for driver '6'
+17:54:52  WARNING   Fixed incorrect tyre stint information for driver '24'
+17:54:53  WARNING   Fixed incorrect tyre stint information for driver '22'
+17:54:53  WARNING   Fixed incorrect tyre stint information for driver '23'
+17:54:53  WARNING   Fixed incorrect tyre stint information for driver '47'
+17:54:53  WARNING   Fixed incorrect tyre stint information for driver '20'
+17:54:54  INFO      Using cached data for weather_data
+17:54:54  INFO      Finished loading data for 20 drivers: ['11', '55', '1', '16', '63', '4', '14', '44', '77', '5', '10', '31', '3', '18', '6', '24', '22', '23', '47', '20']
+17:54:54  INFO        R: collected 1179 rows.
+17:55:25  INFO      
+Round 08: Azerbaijan Grand Prix
+17:55:25  INFO        Loading Q session...
+17:55:25  INFO      Loading data for Azerbaijan Grand Prix - Qualifying [v3.8.1]
+17:55:25  INFO      Using cached data for session_info
+17:55:25  INFO      Using cached data for driver_info
+17:55:25  INFO      Using cached data for session_status_data
+17:55:25  INFO      Using cached data for track_status_data
+17:55:25  INFO      Using cached data for _extended_timing_data
+17:55:25  INFO      Using cached data for timing_app_data
+17:55:25  INFO      Processing timing data...
+17:55:26  INFO      Using cached data for weather_data
+17:55:26  INFO      Finished loading data for 20 drivers: ['16', '11', '1', '55', '63', '10', '44', '22', '5', '14', '4', '3', '31', '24', '77', '20', '23', '6', '18', '47']
+17:55:26  INFO        Q: collected 20 rows.
+17:55:26  INFO        Loading R session...
+17:55:26  INFO      Loading data for Azerbaijan Grand Prix - Race [v3.8.1]
+17:55:26  INFO      Using cached data for session_info
+17:55:26  INFO      Using cached data for driver_info
+17:55:26  INFO      Using cached data for session_status_data
+17:55:26  INFO      Using cached data for lap_count
+17:55:26  INFO      Using cached data for track_status_data
+17:55:26  INFO      Using cached data for _extended_timing_data
+17:55:26  INFO      Using cached data for timing_app_data
+17:55:26  INFO      Processing timing data...
+17:55:28  INFO      Using cached data for weather_data
+17:55:28  INFO      Finished loading data for 20 drivers: ['1', '11', '63', '44', '10', '5', '14', '3', '4', '31', '77', '23', '22', '47', '6', '18', '20', '24', '16', '55']
+17:55:28  INFO        R: collected 891 rows.
+17:55:58  INFO      
+Round 09: Canadian Grand Prix
+17:55:58  INFO        Loading Q session...
+17:55:58  INFO      Loading data for Canadian Grand Prix - Qualifying [v3.8.1]
+17:55:58  INFO      Using cached data for session_info
+17:55:58  INFO      Using cached data for driver_info
+17:55:59  INFO      Using cached data for session_status_data
+17:55:59  INFO      Using cached data for track_status_data
+17:55:59  INFO      Using cached data for _extended_timing_data
+17:55:59  INFO      Using cached data for timing_app_data
+17:55:59  INFO      Processing timing data...
+17:56:00  INFO      Using cached data for weather_data
+17:56:00  INFO      Finished loading data for 20 drivers: ['1', '14', '55', '44', '20', '47', '31', '63', '3', '24', '77', '23', '11', '4', '16', '10', '5', '18', '6', '22']
+17:56:00  INFO        Q: collected 20 rows.
+17:56:00  INFO        Loading R session...
+17:56:00  INFO      Loading data for Canadian Grand Prix - Race [v3.8.1]
+17:56:00  INFO      Using cached data for session_info
+17:56:00  INFO      Using cached data for driver_info
+17:56:01  INFO      Using cached data for session_status_data
+17:56:01  INFO      Using cached data for lap_count
+17:56:01  INFO      Using cached data for track_status_data
+17:56:01  INFO      Using cached data for _extended_timing_data
+17:56:01  INFO      Using cached data for timing_app_data
+17:56:01  INFO      Processing timing data...
+17:56:03  INFO      Using cached data for weather_data
+17:56:04  INFO      Finished loading data for 20 drivers: ['1', '55', '44', '63', '16', '31', '77', '24', '14', '18', '3', '5', '23', '10', '4', '6', '20', '22', '47', '11']
+17:56:04  INFO        R: collected 1264 rows.
+17:56:34  INFO      
+Round 10: British Grand Prix
+17:56:34  INFO        Loading Q session...
+17:56:35  INFO      Loading data for British Grand Prix - Qualifying [v3.8.1]
+17:56:35  INFO      Using cached data for session_info
+17:56:35  INFO      Using cached data for driver_info
+17:56:35  INFO      Using cached data for session_status_data
+17:56:35  INFO      Using cached data for track_status_data
+17:56:35  INFO      Using cached data for _extended_timing_data
+17:56:35  INFO      Using cached data for timing_app_data
+17:56:35  INFO      Processing timing data...
+17:56:36  INFO      Using cached data for weather_data
+17:56:36  INFO      Finished loading data for 20 drivers: ['55', '1', '16', '11', '44', '4', '14', '63', '24', '6', '10', '77', '22', '3', '31', '23', '20', '5', '47', '18']
+17:56:36  INFO        Q: collected 20 rows.
+17:56:36  INFO        Loading R session...
+17:56:36  INFO      Loading data for British Grand Prix - Race [v3.8.1]
+17:56:36  INFO      Using cached data for session_info
+17:56:36  INFO      Using cached data for driver_info
+17:56:36  INFO      Using cached data for session_status_data
+17:56:36  INFO      Using cached data for lap_count
+17:56:36  INFO      Using cached data for track_status_data
+17:56:36  INFO      Using cached data for _extended_timing_data
+17:56:36  INFO      Using cached data for timing_app_data
+17:56:36  INFO      Processing timing data...
+17:56:38  INFO      Using cached data for weather_data
+17:56:38  INFO      Finished loading data for 20 drivers: ['55', '11', '44', '16', '14', '4', '1', '47', '5', '20', '18', '6', '3', '22', '31', '10', '77', '63', '24', '23']
+17:56:38  INFO        R: collected 815 rows.
+17:57:09  INFO      
+Round 11: Austrian Grand Prix
+17:57:09  INFO        Loading Q session...
+17:57:09  INFO      Loading data for Austrian Grand Prix - Qualifying [v3.8.1]
+17:57:09  INFO      Using cached data for session_info
+17:57:09  INFO      Using cached data for driver_info
+17:57:10  INFO      No cached data found for session_status_data. Loading data...
+17:57:10  INFO      Fetching session status data...
+17:57:11  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:57:12  INFO      Data has been written to cache!
+17:57:12  INFO      No cached data found for track_status_data. Loading data...
+17:57:12  INFO      Fetching track status data...
+17:57:14  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:57:15  INFO      Data has been written to cache!
+17:57:15  INFO      No cached data found for _extended_timing_data. Loading data...
+17:57:15  INFO      Fetching timing data...
+17:57:16  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:57:17  INFO      Parsing timing data...
+17:57:18  INFO      Data has been written to cache!
+17:57:18  INFO      No cached data found for timing_app_data. Loading data...
+17:57:18  INFO      Fetching timing app data...
+17:57:19  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:57:20  INFO      Data has been written to cache!
+17:57:20  INFO      Processing timing data...
+17:57:22  INFO      No cached data found for weather_data. Loading data...
+17:57:22  INFO      Fetching weather data...
+17:57:23  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:57:24  INFO      Data has been written to cache!
+17:57:24  INFO      Finished loading data for 20 drivers: ['1', '16', '55', '63', '31', '20', '47', '14', '44', '10', '23', '77', '11', '22', '4', '3', '18', '24', '6', '5']
+17:57:24  INFO        Q: collected 20 rows.
+17:57:24  INFO        Loading R session...
+17:57:24  INFO      Loading data for Austrian Grand Prix - Race [v3.8.1]
+17:57:24  INFO      No cached data found for session_info. Loading data...
+17:57:24  INFO      Fetching session info data...
+17:57:26  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:57:27  INFO      Data has been written to cache!
+17:57:27  INFO      No cached data found for driver_info. Loading data...
+17:57:27  INFO      Fetching driver list...
+17:57:28  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:57:29  INFO      Data has been written to cache!
+17:57:30  INFO      No cached data found for session_status_data. Loading data...
+17:57:30  INFO      Fetching session status data...
+17:57:31  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:57:32  INFO      Data has been written to cache!
+17:57:32  INFO      No cached data found for lap_count. Loading data...
+17:57:32  INFO      Fetching lap count data...
+17:57:33  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:57:34  INFO      Data has been written to cache!
+17:57:34  INFO      No cached data found for track_status_data. Loading data...
+17:57:34  INFO      Fetching track status data...
+17:57:35  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:57:37  INFO      Data has been written to cache!
+17:57:37  INFO      No cached data found for _extended_timing_data. Loading data...
+17:57:37  INFO      Fetching timing data...
+17:57:38  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:57:40  INFO      Parsing timing data...
+17:57:43  INFO      Data has been written to cache!
+17:57:43  INFO      No cached data found for timing_app_data. Loading data...
+17:57:43  INFO      Fetching timing app data...
+17:57:45  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:57:46  INFO      Data has been written to cache!
+17:57:46  INFO      Processing timing data...
+17:57:46  WARNING   Fixed incorrect tyre stint information for driver '16'
+17:57:46  WARNING   Fixed incorrect tyre stint information for driver '1'
+17:57:46  WARNING   Fixed incorrect tyre stint information for driver '44'
+17:57:46  WARNING   Fixed incorrect tyre stint information for driver '63'
+17:57:46  WARNING   Fixed incorrect tyre stint information for driver '31'
+17:57:46  WARNING   Fixed incorrect tyre stint information for driver '47'
+17:57:46  WARNING   Fixed incorrect tyre stint information for driver '4'
+17:57:47  WARNING   Fixed incorrect tyre stint information for driver '20'
+17:57:47  WARNING   Fixed incorrect tyre stint information for driver '3'
+17:57:47  WARNING   Fixed incorrect tyre stint information for driver '14'
+17:57:47  WARNING   Fixed incorrect tyre stint information for driver '77'
+17:57:47  WARNING   Fixed incorrect tyre stint information for driver '23'
+17:57:47  WARNING   Fixed incorrect tyre stint information for driver '18'
+17:57:47  WARNING   Fixed incorrect tyre stint information for driver '24'
+17:57:47  WARNING   Fixed incorrect tyre stint information for driver '10'
+17:57:47  WARNING   Fixed incorrect tyre stint information for driver '22'
+17:57:47  WARNING   Fixed incorrect tyre stint information for driver '5'
+17:57:47  WARNING   Fixed incorrect tyre stint information for driver '55'
+17:57:47  WARNING   Fixed incorrect tyre stint information for driver '6'
+17:57:47  WARNING   Fixed incorrect tyre stint information for driver '11'
+17:57:48  INFO      No cached data found for weather_data. Loading data...
+17:57:48  INFO      Fetching weather data...
+17:57:50  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:57:51  INFO      Data has been written to cache!
+17:57:51  WARNING   Driver 16 completed the race distance 00:00.024000 before the recorded end of the session.
+17:57:51  INFO      Finished loading data for 20 drivers: ['16', '1', '44', '63', '31', '47', '4', '20', '3', '14', '77', '23', '18', '24', '10', '22', '5', '55', '6', '11']
+17:57:51  INFO        R: collected 1324 rows.
+17:58:22  INFO      
+Round 12: French Grand Prix
+17:58:22  INFO        Loading Q session...
+17:58:22  INFO      Loading data for French Grand Prix - Qualifying [v3.8.1]
+17:58:22  INFO      No cached data found for session_info. Loading data...
+17:58:22  INFO      Fetching session info data...
+17:58:23  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:58:24  INFO      Data has been written to cache!
+17:58:24  INFO      No cached data found for driver_info. Loading data...
+17:58:24  INFO      Fetching driver list...
+17:58:25  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:58:26  INFO      Data has been written to cache!
+17:58:26  INFO      No cached data found for session_status_data. Loading data...
+17:58:26  INFO      Fetching session status data...
+17:58:27  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:58:27  INFO      Data has been written to cache!
+17:58:27  INFO      No cached data found for track_status_data. Loading data...
+17:58:27  INFO      Fetching track status data...
+17:58:28  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:58:29  INFO      Data has been written to cache!
+17:58:29  INFO      No cached data found for _extended_timing_data. Loading data...
+17:58:29  INFO      Fetching timing data...
+17:58:30  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:58:31  INFO      Parsing timing data...
+17:58:31  INFO      Data has been written to cache!
+17:58:31  INFO      No cached data found for timing_app_data. Loading data...
+17:58:31  INFO      Fetching timing app data...
+17:58:32  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:58:33  INFO      Data has been written to cache!
+17:58:33  INFO      Processing timing data...
+17:58:34  INFO      No cached data found for weather_data. Loading data...
+17:58:34  INFO      Fetching weather data...
+17:58:34  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:58:35  INFO      Data has been written to cache!
+17:58:35  INFO      Finished loading data for 20 drivers: ['16', '1', '11', '44', '4', '63', '14', '22', '55', '20', '3', '31', '77', '5', '23', '10', '18', '24', '47', '6']
+17:58:35  INFO        Q: collected 20 rows.
+17:58:35  INFO        Loading R session...
+17:58:35  INFO      Loading data for French Grand Prix - Race [v3.8.1]
+17:58:35  INFO      No cached data found for session_info. Loading data...
+17:58:35  INFO      Fetching session info data...
+17:58:36  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:58:37  INFO      Data has been written to cache!
+17:58:37  INFO      No cached data found for driver_info. Loading data...
+17:58:37  INFO      Fetching driver list...
+17:58:38  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:58:38  INFO      Data has been written to cache!
+17:58:39  INFO      No cached data found for session_status_data. Loading data...
+17:58:39  INFO      Fetching session status data...
+17:58:40  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:58:40  INFO      Data has been written to cache!
+17:58:40  INFO      No cached data found for lap_count. Loading data...
+17:58:40  INFO      Fetching lap count data...
+17:58:41  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:58:42  INFO      Data has been written to cache!
+17:58:42  INFO      No cached data found for track_status_data. Loading data...
+17:58:42  INFO      Fetching track status data...
+17:58:43  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:58:44  INFO      Data has been written to cache!
+17:58:44  INFO      No cached data found for _extended_timing_data. Loading data...
+17:58:44  INFO      Fetching timing data...
+17:58:45  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:58:47  INFO      Parsing timing data...
+17:58:48  WARNING   Driver 55: Ignoring late data for a previously processed lap.The data may contain errors (previous: 13; current 14)
+17:58:48  INFO      Data has been written to cache!
+17:58:48  INFO      No cached data found for timing_app_data. Loading data...
+17:58:48  INFO      Fetching timing app data...
+17:58:49  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:58:50  INFO      Data has been written to cache!
+17:58:50  INFO      Processing timing data...
+17:58:52  INFO      No cached data found for weather_data. Loading data...
+17:58:52  INFO      Fetching weather data...
+17:58:53  DEBUG     Falling back to livetiming mirror (https://livetiming-mirror.fastf1.dev)
+17:58:53  INFO      Data has been written to cache!
+17:58:53  WARNING   Driver 1 completed the race distance 00:00.041000 before the recorded end of the session.
+17:58:53  INFO      Finished loading data for 20 drivers: ['1', '44', '63', '11', '55', '14', '4', '31', '3', '18', '5', '10', '23', '77', '47', '24', '6', '20', '16', '22']
+17:58:53  INFO        R: collected 958 rows.
+17:59:24  INFO      
+Round 13: Hungarian Grand Prix
+17:59:24  INFO        Loading Q session...
+17:59:24  INFO      Loading data for Hungarian Grand Prix - Qualifying [v3.8.1]
+17:59:24  INFO      Using cached data for session_info
+17:59:24  INFO      Using cached data for driver_info
+17:59:24  INFO      Using cached data for session_status_data
+17:59:24  INFO      Using cached data for track_status_data
+17:59:24  INFO      Using cached data for _extended_timing_data
+17:59:24  INFO      Using cached data for timing_app_data
+17:59:24  INFO      Processing timing data...
+17:59:26  INFO      Using cached data for weather_data
+17:59:26  INFO      Finished loading data for 20 drivers: ['63', '55', '16', '4', '31', '14', '44', '77', '3', '1', '11', '24', '20', '18', '47', '22', '23', '5', '10', '6']
+17:59:26  INFO        Q: collected 20 rows.
+17:59:26  INFO        Loading R session...
+17:59:26  INFO      Loading data for Hungarian Grand Prix - Race [v3.8.1]
+17:59:26  INFO      Using cached data for session_info
+17:59:26  INFO      Using cached data for driver_info
+17:59:27  INFO      Using cached data for session_status_data
+17:59:27  INFO      Using cached data for lap_count
+17:59:27  INFO      Using cached data for track_status_data
+17:59:27  INFO      Using cached data for _extended_timing_data
+17:59:27  INFO      Using cached data for timing_app_data
+17:59:27  INFO      Processing timing data...
+17:59:31  INFO      Using cached data for weather_data
+17:59:31  INFO      Finished loading data for 20 drivers: ['1', '44', '63', '55', '11', '16', '4', '14', '31', '5', '18', '10', '24', '47', '3', '20', '23', '6', '22', '77']
+17:59:31  INFO        R: collected 1383 rows.
+18:00:02  INFO      
+Round 14: Belgian Grand Prix
+18:00:02  INFO        Loading Q session...
+18:00:02  INFO      Loading data for Belgian Grand Prix - Qualifying [v3.8.1]
+18:00:02  INFO      Using cached data for session_info
+18:00:02  INFO      Using cached data for driver_info
+18:00:03  INFO      Using cached data for session_status_data
+18:00:03  INFO      Using cached data for track_status_data
+18:00:03  INFO      Using cached data for _extended_timing_data
+18:00:03  INFO      Using cached data for timing_app_data
+18:00:03  INFO      Processing timing data...
+18:00:04  INFO      Using cached data for weather_data
+18:00:04  INFO      Finished loading data for 20 drivers: ['1', '55', '11', '16', '31', '14', '44', '63', '23', '4', '3', '10', '24', '18', '47', '5', '6', '20', '22', '77']
+18:00:04  INFO        Q: collected 20 rows.
+18:00:04  INFO        Loading R session...
+18:00:04  INFO      Loading data for Belgian Grand Prix - Race [v3.8.1]
+18:00:04  INFO      Using cached data for session_info
+18:00:04  INFO      Using cached data for driver_info
+18:00:04  INFO      Using cached data for session_status_data
+18:00:04  INFO      Using cached data for lap_count
+18:00:04  INFO      Using cached data for track_status_data
+18:00:04  INFO      Using cached data for _extended_timing_data
+18:00:04  INFO      Using cached data for timing_app_data
+18:00:04  INFO      Processing timing data...
+18:00:05  WARNING   Fixed incorrect tyre stint information for driver '10'
+18:00:05  WARNING   Fixed incorrect tyre stint information for driver '22'
+18:00:06  INFO      Using cached data for weather_data
+18:00:06  INFO      Finished loading data for 20 drivers: ['1', '11', '55', '63', '14', '16', '31', '5', '10', '23', '18', '4', '22', '24', '3', '20', '47', '6', '77', '44']
+18:00:06  INFO        R: collected 792 rows.
+18:00:37  INFO      
+Round 15: Dutch Grand Prix
+18:00:37  INFO        Loading Q session...
+18:00:37  INFO      Loading data for Dutch Grand Prix - Qualifying [v3.8.1]
+18:00:37  INFO      Using cached data for session_info
+18:00:38  INFO      Using cached data for driver_info
+18:00:38  INFO      Using cached data for session_status_data
+18:00:38  INFO      Using cached data for track_status_data
+18:00:38  INFO      Using cached data for _extended_timing_data
+18:00:38  INFO      Using cached data for timing_app_data
+18:00:38  INFO      Processing timing data...
+18:00:39  INFO      Using cached data for weather_data
+18:00:39  INFO      Finished loading data for 20 drivers: ['1', '16', '55', '44', '11', '63', '4', '47', '22', '18', '10', '31', '14', '24', '23', '77', '3', '20', '5', '6']
+18:00:39  INFO        Q: collected 20 rows.
+18:00:39  INFO        Loading R session...
+18:00:39  INFO      Loading data for Dutch Grand Prix - Race [v3.8.1]
+18:00:39  INFO      Using cached data for session_info
+18:00:39  INFO      Using cached data for driver_info
+18:00:40  INFO      Using cached data for session_status_data
+18:00:40  INFO      Using cached data for lap_count
+18:00:40  INFO      Using cached data for track_status_data
+18:00:40  INFO      Using cached data for _extended_timing_data
+18:00:40  INFO      Using cached data for timing_app_data
+18:00:40  INFO      Processing timing data...
+18:00:43  INFO      Using cached data for weather_data
+18:00:43  INFO      Finished loading data for 20 drivers: ['1', '63', '16', '44', '11', '14', '4', '55', '31', '18', '10', '23', '47', '5', '20', '24', '3', '6', '77', '22']
+18:00:43  INFO        R: collected 1392 rows.
+18:01:14  INFO      
+Round 16: Italian Grand Prix
+18:01:14  INFO        Loading Q session...
+18:01:14  INFO      Loading data for Italian Grand Prix - Qualifying [v3.8.1]
+18:01:14  INFO      Using cached data for session_info
+18:01:14  INFO      Using cached data for driver_info
+18:01:14  INFO      Using cached data for session_status_data
+18:01:14  INFO      Using cached data for track_status_data
+18:01:14  INFO      Using cached data for _extended_timing_data
+18:01:14  INFO      Using cached data for timing_app_data
+18:01:14  INFO      Processing timing data...
+18:01:15  INFO      Using cached data for weather_data
+18:01:15  INFO      Finished loading data for 20 drivers: ['16', '1', '55', '11', '44', '63', '4', '3', '10', '14', '31', '77', '45', '24', '22', '6', '5', '18', '20', '47']
+18:01:15  INFO        Q: collected 20 rows.
+18:01:15  INFO        Loading R session...
+18:01:15  INFO      Loading data for Italian Grand Prix - Race [v3.8.1]
+18:01:15  INFO      Using cached data for session_info
+18:01:15  INFO      Using cached data for driver_info
+18:01:15  INFO      Using cached data for session_status_data
+18:01:15  INFO      Using cached data for lap_count
+18:01:15  INFO      Using cached data for track_status_data
+18:01:15  INFO      Using cached data for _extended_timing_data
+18:01:15  INFO      Using cached data for timing_app_data
+18:01:15  INFO      Processing timing data...
+18:01:16  INFO      Using cached data for weather_data
+18:01:16  INFO      Finished loading data for 20 drivers: ['1', '16', '63', '55', '44', '11', '4', '10', '45', '24', '31', '47', '77', '22', '6', '20', '3', '18', '14', '5']
+18:01:16  INFO        R: collected 971 rows.
+18:01:47  INFO      
+Round 17: Singapore Grand Prix
+18:01:47  INFO        Loading Q session...
+18:01:47  INFO      Loading data for Singapore Grand Prix - Qualifying [v3.8.1]
+18:01:47  INFO      Using cached data for session_info
+18:01:47  INFO      Using cached data for driver_info
+18:01:47  INFO      Using cached data for session_status_data
+18:01:47  INFO      Using cached data for track_status_data
+18:01:47  INFO      Using cached data for _extended_timing_data
+18:01:47  INFO      Using cached data for timing_app_data
+18:01:47  INFO      Processing timing data...
+18:01:48  INFO      Using cached data for weather_data
+18:01:48  INFO      Finished loading data for 20 drivers: ['16', '11', '44', '55', '14', '4', '10', '1', '20', '22', '63', '18', '47', '5', '24', '77', '3', '31', '23', '6']
+18:01:48  INFO        Q: collected 20 rows.
+18:01:48  INFO        Loading R session...
+18:01:48  INFO      Loading data for Singapore Grand Prix - Race [v3.8.1]
+18:01:48  INFO      Using cached data for session_info
+18:01:48  INFO      Using cached data for driver_info
+18:01:48  INFO      Using cached data for session_status_data
+18:01:48  INFO      Using cached data for lap_count
+18:01:48  INFO      Using cached data for track_status_data
+18:01:48  INFO      Using cached data for _extended_timing_data
+18:01:48  INFO      Using cached data for timing_app_data
+18:01:48  INFO      Processing timing data...
+18:01:50  INFO      Using cached data for weather_data
+18:01:50  INFO      Finished loading data for 20 drivers: ['11', '16', '55', '4', '3', '18', '1', '5', '44', '10', '77', '20', '47', '63', '22', '31', '23', '14', '6', '24']
+18:01:50  INFO        R: collected 945 rows.
+18:02:21  INFO      
+Round 18: Japanese Grand Prix
+18:02:21  INFO        Loading Q session...
+18:02:21  INFO      Loading data for Japanese Grand Prix - Qualifying [v3.8.1]
+18:02:21  INFO      Using cached data for session_info
+18:02:21  INFO      Using cached data for driver_info
+18:02:21  INFO      Using cached data for session_status_data
+18:02:21  INFO      Using cached data for track_status_data
+18:02:21  INFO      Using cached data for _extended_timing_data
+18:02:21  INFO      Using cached data for timing_app_data
+18:02:21  INFO      Processing timing data...
+18:02:22  INFO      Using cached data for weather_data
+18:02:22  INFO      Finished loading data for 20 drivers: ['1', '16', '55', '11', '31', '44', '14', '63', '5', '4', '3', '77', '22', '24', '47', '23', '10', '20', '18', '6']
+18:02:22  INFO        Q: collected 20 rows.
+18:02:22  INFO        Loading R session...
+18:02:22  INFO      Loading data for Japanese Grand Prix - Race [v3.8.1]
+18:02:22  INFO      Using cached data for session_info
+18:02:22  INFO      Using cached data for driver_info
+18:02:22  INFO      Using cached data for session_status_data
+18:02:22  INFO      Using cached data for lap_count
+18:02:22  INFO      Using cached data for track_status_data
+18:02:22  INFO      Using cached data for _extended_timing_data
+18:02:22  INFO      Using cached data for timing_app_data
+18:02:22  INFO      Processing timing data...
+18:02:23  INFO      Using cached data for weather_data
+18:02:23  INFO      Finished loading data for 20 drivers: ['1', '11', '16', '31', '44', '5', '14', '63', '6', '4', '3', '18', '22', '20', '77', '24', '47', '10', '55', '23']
+18:02:23  INFO        R: collected 507 rows.
+18:02:54  INFO      
+Round 19: United States Grand Prix
+18:02:54  INFO        Loading Q session...
+18:02:54  INFO      Loading data for United States Grand Prix - Qualifying [v3.8.1]
+18:02:54  INFO      Using cached data for session_info
+18:02:54  INFO      Using cached data for driver_info
+18:02:54  INFO      Using cached data for session_status_data
+18:02:54  INFO      Using cached data for track_status_data
+18:02:54  INFO      Using cached data for _extended_timing_data
+18:02:54  INFO      Using cached data for timing_app_data
+18:02:54  INFO      Processing timing data...
+18:02:55  INFO      Using cached data for weather_data
+18:02:55  INFO      Finished loading data for 20 drivers: ['55', '16', '1', '11', '44', '63', '18', '4', '14', '77', '23', '5', '10', '24', '22', '20', '3', '31', '47', '6']
+18:02:55  INFO        Q: collected 20 rows.
+18:02:55  INFO        Loading R session...
+18:02:55  INFO      Loading data for United States Grand Prix - Race [v3.8.1]
+18:02:55  INFO      Using cached data for session_info
+18:02:55  INFO      Using cached data for driver_info
+18:02:55  INFO      Using cached data for session_status_data
+18:02:55  INFO      Using cached data for lap_count
+18:02:55  INFO      Using cached data for track_status_data
+18:02:55  INFO      Using cached data for _extended_timing_data
+18:02:55  INFO      Using cached data for timing_app_data
+18:02:55  INFO      Processing timing data...
+18:02:57  INFO      Using cached data for weather_data
+18:02:57  INFO      Finished loading data for 20 drivers: ['1', '44', '16', '11', '63', '4', '14', '5', '20', '22', '31', '24', '23', '10', '47', '3', '6', '18', '77', '55']
+18:02:57  INFO        R: collected 992 rows.
+18:03:27  INFO      
+Round 20: Mexico City Grand Prix
+18:03:27  INFO        Loading Q session...
+18:03:27  INFO      Loading data for Mexico City Grand Prix - Qualifying [v3.8.1]
+18:03:27  INFO      Using cached data for session_info
+18:03:27  INFO      Using cached data for driver_info
+18:03:28  INFO      Using cached data for session_status_data
+18:03:28  INFO      Using cached data for track_status_data
+18:03:28  INFO      Using cached data for _extended_timing_data
+18:03:28  INFO      Using cached data for timing_app_data
+18:03:28  INFO      Processing timing data...
+18:03:28  INFO      Using cached data for weather_data
+18:03:28  INFO      Finished loading data for 20 drivers: ['1', '63', '44', '11', '55', '77', '16', '4', '14', '31', '3', '24', '22', '10', '20', '47', '5', '18', '23', '6']
+18:03:28  INFO        Q: collected 20 rows.
+18:03:28  INFO        Loading R session...
+18:03:28  INFO      Loading data for Mexico City Grand Prix - Race [v3.8.1]
+18:03:28  INFO      Using cached data for session_info
+18:03:28  INFO      Using cached data for driver_info
+18:03:29  INFO      Using cached data for session_status_data
+18:03:29  INFO      Using cached data for lap_count
+18:03:29  INFO      Using cached data for track_status_data
+18:03:29  INFO      Using cached data for _extended_timing_data
+18:03:29  INFO      Using cached data for timing_app_data
+18:03:29  INFO      Processing timing data...
+18:03:30  INFO      Using cached data for weather_data
+18:03:30  INFO      Finished loading data for 20 drivers: ['1', '44', '11', '63', '55', '16', '3', '31', '4', '77', '10', '23', '24', '5', '18', '47', '20', '6', '14', '22']
+18:03:30  INFO        R: collected 1379 rows.
+18:04:00  INFO      
+Round 21: São Paulo Grand Prix
+18:04:00  INFO        Loading Q session...
+18:04:00  INFO      Loading data for São Paulo Grand Prix - Qualifying [v3.8.1]
+18:04:00  INFO      Using cached data for session_info
+18:04:00  INFO      Using cached data for driver_info
+18:04:01  INFO      Using cached data for session_status_data
+18:04:01  INFO      Using cached data for track_status_data
+18:04:01  INFO      Using cached data for _extended_timing_data
+18:04:01  INFO      Using cached data for timing_app_data
+18:04:01  INFO      Processing timing data...
+18:04:01  INFO      Using cached data for weather_data
+18:04:01  INFO      Finished loading data for 20 drivers: ['20', '1', '63', '4', '55', '31', '14', '44', '11', '16', '23', '10', '5', '3', '18', '6', '24', '77', '22', '47']
+18:04:01  INFO        Q: collected 20 rows.
+18:04:01  INFO        Loading R session...
+18:04:01  INFO      Loading data for São Paulo Grand Prix - Race [v3.8.1]
+18:04:01  INFO      Using cached data for session_info
+18:04:01  INFO      Using cached data for driver_info
+18:04:02  INFO      Using cached data for session_status_data
+18:04:02  INFO      Using cached data for lap_count
+18:04:02  INFO      Using cached data for track_status_data
+18:04:02  INFO      Using cached data for _extended_timing_data
+18:04:02  INFO      Using cached data for timing_app_data
+18:04:02  INFO      Processing timing data...
+18:04:03  INFO      Using cached data for weather_data
+18:04:03  INFO      Finished loading data for 20 drivers: ['63', '44', '55', '16', '14', '1', '11', '31', '77', '18', '5', '24', '47', '10', '23', '6', '22', '4', '20', '3']
+18:04:03  INFO        R: collected 1259 rows.
+18:04:33  INFO      
+Round 22: Abu Dhabi Grand Prix
+18:04:33  INFO        Loading Q session...
+18:04:33  INFO      Loading data for Abu Dhabi Grand Prix - Qualifying [v3.8.1]
+18:04:33  INFO      Using cached data for session_info
+18:04:33  INFO      Using cached data for driver_info
+18:04:34  INFO      Using cached data for session_status_data
+18:04:34  INFO      Using cached data for track_status_data
+18:04:34  INFO      Using cached data for _extended_timing_data
+18:04:34  INFO      Using cached data for timing_app_data
+18:04:34  INFO      Processing timing data...
+18:04:34  INFO      Using cached data for weather_data
+18:04:34  INFO      Finished loading data for 20 drivers: ['1', '11', '16', '55', '44', '63', '4', '31', '5', '3', '14', '22', '47', '18', '24', '20', '10', '77', '23', '6']
+18:04:34  INFO        Q: collected 20 rows.
+18:04:34  INFO        Loading R session...
+18:04:34  INFO      Loading data for Abu Dhabi Grand Prix - Race [v3.8.1]
+18:04:34  INFO      Using cached data for session_info
+18:04:34  INFO      Using cached data for driver_info
+18:04:35  INFO      Using cached data for session_status_data
+18:04:35  INFO      Using cached data for lap_count
+18:04:35  INFO      Using cached data for track_status_data
+18:04:35  INFO      Using cached data for _extended_timing_data
+18:04:35  INFO      Using cached data for timing_app_data
+18:04:35  INFO      Processing timing data...
+18:04:36  INFO      Using cached data for weather_data
+18:04:36  INFO      Finished loading data for 20 drivers: ['1', '16', '11', '55', '63', '4', '31', '18', '3', '5', '22', '24', '23', '10', '77', '47', '20', '44', '6', '14']
+18:04:36  INFO        R: collected 1117 rows.
+18:05:06  INFO      ============================================================
+18:05:06  INFO      Season: 2023
+18:05:06  INFO      ============================================================
+18:05:07  INFO      
+Round 01: Bahrain Grand Prix
+18:05:07  INFO        Loading Q session...
+18:05:07  INFO      Loading data for Bahrain Grand Prix - Qualifying [v3.8.1]
+18:05:07  INFO      Using cached data for session_info
+18:05:07  INFO      Using cached data for driver_info
+18:05:07  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:05:07  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:05:07  INFO      Using cached data for session_status_data
+18:05:07  INFO      Using cached data for track_status_data
+18:05:07  INFO      Using cached data for _extended_timing_data
+18:05:07  INFO      Using cached data for timing_app_data
+18:05:07  INFO      Processing timing data...
+18:05:08  INFO      Using cached data for weather_data
+18:05:08  INFO      Finished loading data for 20 drivers: ['1', '11', '16', '55', '14', '63', '44', '18', '31', '27', '4', '77', '24', '22', '23', '2', '20', '81', '21', '10']
+18:05:08  INFO        Q: collected 20 rows.
+18:05:08  INFO        Loading R session...
+18:05:08  INFO      Loading data for Bahrain Grand Prix - Race [v3.8.1]
+18:05:08  INFO      Using cached data for session_info
+18:05:08  INFO      Using cached data for driver_info
+18:05:08  INFO      Using cached data for session_status_data
+18:05:08  INFO      Using cached data for lap_count
+18:05:08  INFO      Using cached data for track_status_data
+18:05:08  INFO      Using cached data for _extended_timing_data
+18:05:08  INFO      Using cached data for timing_app_data
+18:05:08  INFO      Processing timing data...
+18:05:09  INFO      Using cached data for weather_data
+18:05:09  INFO      Finished loading data for 20 drivers: ['1', '11', '14', '55', '44', '18', '63', '77', '10', '23', '22', '2', '20', '21', '27', '24', '4', '31', '16', '81']
+18:05:09  INFO        R: collected 1056 rows.
+18:05:39  INFO      
+Round 02: Saudi Arabian Grand Prix
+18:05:39  INFO        Loading Q session...
+18:05:39  INFO      Loading data for Saudi Arabian Grand Prix - Qualifying [v3.8.1]
+18:05:39  INFO      Using cached data for session_info
+18:05:39  INFO      Using cached data for driver_info
+18:05:40  INFO      Using cached data for session_status_data
+18:05:40  INFO      Using cached data for track_status_data
+18:05:40  INFO      Using cached data for _extended_timing_data
+18:05:40  INFO      Using cached data for timing_app_data
+18:05:40  INFO      Processing timing data...
+18:05:40  INFO      Using cached data for weather_data
+18:05:40  INFO      Finished loading data for 20 drivers: ['11', '16', '14', '63', '55', '18', '31', '44', '81', '10', '27', '24', '20', '77', '1', '22', '23', '21', '4', '2']
+18:05:40  INFO        Q: collected 20 rows.
+18:05:40  INFO        Loading R session...
+18:05:40  INFO      Loading data for Saudi Arabian Grand Prix - Race [v3.8.1]
+18:05:40  INFO      Using cached data for session_info
+18:05:40  INFO      Using cached data for driver_info
+18:05:41  INFO      Using cached data for session_status_data
+18:05:41  INFO      Using cached data for lap_count
+18:05:41  INFO      Using cached data for track_status_data
+18:05:41  INFO      Using cached data for _extended_timing_data
+18:05:41  INFO      Using cached data for timing_app_data
+18:05:41  INFO      Processing timing data...
+18:05:41  INFO      Using cached data for weather_data
+18:05:41  WARNING   Driver 11 completed the race distance 00:00.035000 before the recorded end of the session.
+18:05:42  INFO      Finished loading data for 20 drivers: ['11', '1', '14', '63', '44', '55', '16', '31', '10', '20', '22', '27', '24', '21', '81', '2', '4', '77', '23', '18']
+18:05:42  INFO        R: collected 943 rows.
+18:06:12  INFO      
+Round 03: Australian Grand Prix
+18:06:12  INFO        Loading Q session...
+18:06:12  INFO      Loading data for Australian Grand Prix - Qualifying [v3.8.1]
+18:06:12  INFO      Using cached data for session_info
+18:06:12  INFO      Using cached data for driver_info
+18:06:12  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:06:12  INFO      Using cached data for session_status_data
+18:06:12  INFO      Using cached data for track_status_data
+18:06:12  INFO      Using cached data for _extended_timing_data
+18:06:12  INFO      Using cached data for timing_app_data
+18:06:12  INFO      Processing timing data...
+18:06:13  INFO      Using cached data for weather_data
+18:06:13  INFO      Finished loading data for 20 drivers: ['1', '63', '44', '14', '55', '18', '16', '23', '10', '27', '31', '22', '4', '20', '21', '81', '24', '2', '77', '11']
+18:06:13  INFO        Q: collected 20 rows.
+18:06:13  INFO        Loading R session...
+18:06:13  INFO      Loading data for Australian Grand Prix - Race [v3.8.1]
+18:06:13  INFO      Using cached data for session_info
+18:06:13  INFO      Using cached data for driver_info
+18:06:13  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:06:13  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:06:13  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:06:13  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:06:13  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:06:13  INFO      Using cached data for session_status_data
+18:06:13  INFO      Using cached data for lap_count
+18:06:13  INFO      Using cached data for track_status_data
+18:06:13  INFO      Using cached data for _extended_timing_data
+18:06:13  INFO      Using cached data for timing_app_data
+18:06:13  INFO      Processing timing data...
+18:06:15  INFO      Using cached data for weather_data
+18:06:15  INFO      Finished loading data for 20 drivers: ['1', '44', '14', '18', '11', '4', '27', '81', '24', '22', '77', '55', '10', '31', '21', '2', '20', '63', '23', '16']
+18:06:15  INFO        R: collected 1003 rows.
+18:06:45  INFO      
+Round 04: Azerbaijan Grand Prix
+18:06:45  INFO        Loading Q session...
+18:06:45  INFO      Loading data for Azerbaijan Grand Prix - Qualifying [v3.8.1]
+18:06:45  INFO      Using cached data for session_info
+18:06:45  INFO      Using cached data for driver_info
+18:06:46  INFO      Using cached data for session_status_data
+18:06:46  INFO      Using cached data for track_status_data
+18:06:46  INFO      Using cached data for _extended_timing_data
+18:06:46  INFO      Using cached data for timing_app_data
+18:06:46  INFO      Processing timing data...
+18:06:46  INFO      Using cached data for weather_data
+18:06:46  INFO      Finished loading data for 20 drivers: ['16', '1', '11', '55', '44', '14', '4', '22', '18', '81', '63', '31', '23', '77', '2', '24', '27', '20', '10', '21']
+18:06:46  INFO        Q: collected 20 rows.
+18:06:46  INFO        Loading R session...
+18:06:46  INFO      Loading data for Azerbaijan Grand Prix - Race [v3.8.1]
+18:06:46  INFO      Using cached data for session_info
+18:06:46  INFO      Using cached data for driver_info
+18:06:47  INFO      Using cached data for session_status_data
+18:06:47  INFO      Using cached data for lap_count
+18:06:47  INFO      Using cached data for track_status_data
+18:06:47  INFO      Using cached data for _extended_timing_data
+18:06:47  INFO      Using cached data for timing_app_data
+18:06:47  INFO      Processing timing data...
+18:06:48  INFO      Using cached data for weather_data
+18:06:48  INFO      Finished loading data for 20 drivers: ['11', '1', '16', '14', '55', '44', '18', '63', '4', '22', '81', '23', '20', '10', '31', '2', '27', '77', '24', '21']
+18:06:48  INFO        R: collected 962 rows.
+18:07:18  INFO      
+Round 05: Miami Grand Prix
+18:07:18  INFO        Loading Q session...
+18:07:18  INFO      Loading data for Miami Grand Prix - Qualifying [v3.8.1]
+18:07:18  INFO      Using cached data for session_info
+18:07:18  INFO      Using cached data for driver_info
+18:07:18  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:07:18  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:07:18  INFO      Using cached data for session_status_data
+18:07:18  INFO      Using cached data for track_status_data
+18:07:18  INFO      Using cached data for _extended_timing_data
+18:07:18  INFO      Using cached data for timing_app_data
+18:07:18  INFO      Processing timing data...
+18:07:19  INFO      Using cached data for weather_data
+18:07:19  INFO      Finished loading data for 20 drivers: ['11', '14', '55', '20', '10', '63', '16', '31', '1', '77', '23', '27', '44', '24', '21', '4', '22', '18', '81', '2']
+18:07:19  INFO        Q: collected 20 rows.
+18:07:19  INFO        Loading R session...
+18:07:19  INFO      Loading data for Miami Grand Prix - Race [v3.8.1]
+18:07:19  INFO      Using cached data for session_info
+18:07:19  INFO      Using cached data for driver_info
+18:07:19  INFO      Using cached data for session_status_data
+18:07:19  INFO      Using cached data for lap_count
+18:07:19  INFO      Using cached data for track_status_data
+18:07:19  INFO      Using cached data for _extended_timing_data
+18:07:19  INFO      Using cached data for timing_app_data
+18:07:19  INFO      Processing timing data...
+18:07:20  INFO      Using cached data for weather_data
+18:07:20  INFO      Finished loading data for 20 drivers: ['1', '11', '14', '63', '55', '44', '16', '10', '31', '20', '22', '18', '77', '23', '27', '24', '4', '21', '81', '2']
+18:07:20  INFO        R: collected 1138 rows.
+18:07:51  INFO      
+Round 06: Monaco Grand Prix
+18:07:51  INFO        Loading Q session...
+18:07:51  INFO      Loading data for Monaco Grand Prix - Qualifying [v3.8.1]
+18:07:51  INFO      Using cached data for session_info
+18:07:51  INFO      Using cached data for driver_info
+18:07:51  INFO      Using cached data for session_status_data
+18:07:51  INFO      Using cached data for track_status_data
+18:07:51  INFO      Using cached data for _extended_timing_data
+18:07:51  INFO      Using cached data for timing_app_data
+18:07:51  INFO      Processing timing data...
+18:07:52  INFO      Using cached data for weather_data
+18:07:52  INFO      Finished loading data for 20 drivers: ['1', '14', '16', '31', '55', '44', '10', '63', '22', '4', '81', '21', '23', '18', '77', '2', '20', '27', '24', '11']
+18:07:52  INFO        Q: collected 20 rows.
+18:07:52  INFO        Loading R session...
+18:07:52  INFO      Loading data for Monaco Grand Prix - Race [v3.8.1]
+18:07:52  INFO      Using cached data for session_info
+18:07:52  INFO      Using cached data for driver_info
+18:07:52  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:07:52  INFO      Using cached data for session_status_data
+18:07:52  INFO      Using cached data for lap_count
+18:07:52  INFO      Using cached data for track_status_data
+18:07:52  INFO      Using cached data for _extended_timing_data
+18:07:52  INFO      Using cached data for timing_app_data
+18:07:52  INFO      Processing timing data...
+18:07:53  INFO      Using cached data for weather_data
+18:07:53  INFO      Finished loading data for 20 drivers: ['1', '14', '31', '44', '63', '16', '10', '55', '4', '81', '77', '21', '24', '23', '22', '11', '27', '2', '20', '18']
+18:07:53  INFO        R: collected 1515 rows.
+18:08:24  INFO      
+Round 07: Spanish Grand Prix
+18:08:24  INFO        Loading Q session...
+18:08:24  INFO      Loading data for Spanish Grand Prix - Qualifying [v3.8.1]
+18:08:24  INFO      Using cached data for session_info
+18:08:24  INFO      Using cached data for driver_info
+18:08:24  INFO      Using cached data for session_status_data
+18:08:24  INFO      Using cached data for track_status_data
+18:08:24  INFO      Using cached data for _extended_timing_data
+18:08:24  INFO      Using cached data for timing_app_data
+18:08:24  INFO      Processing timing data...
+18:08:25  INFO      Using cached data for weather_data
+18:08:25  INFO      Finished loading data for 20 drivers: ['1', '55', '4', '10', '44', '18', '31', '27', '14', '81', '11', '63', '24', '21', '22', '77', '20', '23', '16', '2']
+18:08:25  INFO        Q: collected 20 rows.
+18:08:25  INFO        Loading R session...
+18:08:25  INFO      Loading data for Spanish Grand Prix - Race [v3.8.1]
+18:08:25  INFO      Using cached data for session_info
+18:08:25  INFO      Using cached data for driver_info
+18:08:25  INFO      Using cached data for session_status_data
+18:08:25  INFO      Using cached data for lap_count
+18:08:25  INFO      Using cached data for track_status_data
+18:08:25  INFO      Using cached data for _extended_timing_data
+18:08:25  INFO      Using cached data for timing_app_data
+18:08:25  INFO      Processing timing data...
+18:08:26  INFO      Using cached data for weather_data
+18:08:26  WARNING   Driver 1 completed the race distance 00:00.037000 before the recorded end of the session.
+18:08:26  INFO      Finished loading data for 20 drivers: ['1', '44', '63', '11', '55', '18', '14', '31', '24', '10', '16', '22', '81', '21', '27', '23', '4', '20', '77', '2']
+18:08:26  INFO        R: collected 1312 rows.
+18:08:57  INFO      
+Round 08: Canadian Grand Prix
+18:08:57  INFO        Loading Q session...
+18:08:57  INFO      Loading data for Canadian Grand Prix - Qualifying [v3.8.1]
+18:08:57  INFO      Using cached data for session_info
+18:08:57  INFO      Using cached data for driver_info
+18:08:57  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:08:57  INFO      Using cached data for session_status_data
+18:08:57  INFO      Using cached data for track_status_data
+18:08:57  INFO      Using cached data for _extended_timing_data
+18:08:57  INFO      Using cached data for timing_app_data
+18:08:57  INFO      Processing timing data...
+18:08:57  INFO      Using cached data for weather_data
+18:08:57  INFO      Finished loading data for 20 drivers: ['1', '27', '14', '44', '63', '31', '4', '55', '81', '23', '16', '11', '18', '20', '77', '22', '10', '21', '2', '24']
+18:08:57  INFO        Q: collected 20 rows.
+18:08:57  INFO        Loading R session...
+18:08:57  INFO      Loading data for Canadian Grand Prix - Race [v3.8.1]
+18:08:57  INFO      Using cached data for session_info
+18:08:57  INFO      Using cached data for driver_info
+18:08:58  INFO      Using cached data for session_status_data
+18:08:58  INFO      Using cached data for lap_count
+18:08:58  INFO      Using cached data for track_status_data
+18:08:58  INFO      Using cached data for _extended_timing_data
+18:08:58  INFO      Using cached data for timing_app_data
+18:08:58  INFO      Processing timing data...
+18:08:58  WARNING   Fixed incorrect tyre stint information for driver '22'
+18:08:59  INFO      No cached data found for weather_data. Loading data...
+18:08:59  INFO      Fetching weather data...
+18:09:00  INFO      Data has been written to cache!
+18:09:00  INFO      Finished loading data for 20 drivers: ['1', '14', '44', '16', '55', '11', '23', '31', '18', '77', '81', '10', '4', '22', '27', '24', '20', '21', '63', '2']
+18:09:00  INFO        R: collected 1317 rows.
+18:09:30  INFO      
+Round 09: Austrian Grand Prix
+18:09:30  INFO        Loading Q session...
+18:09:30  INFO      Loading data for Austrian Grand Prix - Qualifying [v3.8.1]
+18:09:30  INFO      Using cached data for session_info
+18:09:30  INFO      No cached data found for driver_info. Loading data...
+18:09:30  INFO      Fetching driver list...
+18:09:31  INFO      Data has been written to cache!
+18:09:31  INFO      No cached data found for session_status_data. Loading data...
+18:09:31  INFO      Fetching session status data...
+18:09:32  INFO      Data has been written to cache!
+18:09:32  INFO      No cached data found for track_status_data. Loading data...
+18:09:32  INFO      Fetching track status data...
+18:09:33  INFO      Data has been written to cache!
+18:09:33  INFO      No cached data found for _extended_timing_data. Loading data...
+18:09:33  INFO      Fetching timing data...
+18:09:34  INFO      Parsing timing data...
+18:09:34  INFO      Data has been written to cache!
+18:09:34  INFO      No cached data found for timing_app_data. Loading data...
+18:09:34  INFO      Fetching timing app data...
+18:09:35  INFO      Data has been written to cache!
+18:09:35  INFO      Processing timing data...
+18:09:36  INFO      No cached data found for weather_data. Loading data...
+18:09:36  INFO      Fetching weather data...
+18:09:36  INFO      Data has been written to cache!
+18:09:36  INFO      Finished loading data for 20 drivers: ['1', '16', '55', '4', '44', '18', '14', '27', '10', '23', '63', '31', '81', '77', '11', '22', '24', '2', '20', '21']
+18:09:36  INFO        Q: collected 20 rows.
+18:09:36  INFO        Loading R session...
+18:09:36  INFO      Loading data for Austrian Grand Prix - Race [v3.8.1]
+18:09:36  INFO      No cached data found for session_info. Loading data...
+18:09:36  INFO      Fetching session info data...
+18:09:37  INFO      Data has been written to cache!
+18:09:37  INFO      No cached data found for driver_info. Loading data...
+18:09:37  INFO      Fetching driver list...
+18:09:37  INFO      Data has been written to cache!
+18:09:38  INFO      No cached data found for session_status_data. Loading data...
+18:09:38  INFO      Fetching session status data...
+18:09:38  INFO      Data has been written to cache!
+18:09:38  INFO      No cached data found for lap_count. Loading data...
+18:09:38  INFO      Fetching lap count data...
+18:09:38  INFO      Data has been written to cache!
+18:09:38  INFO      No cached data found for track_status_data. Loading data...
+18:09:38  INFO      Fetching track status data...
+18:09:39  INFO      Data has been written to cache!
+18:09:39  INFO      No cached data found for _extended_timing_data. Loading data...
+18:09:39  INFO      Fetching timing data...
+18:09:40  INFO      Parsing timing data...
+18:09:42  WARNING   Driver 20: Encountered 1 timing integrity error(s) near lap(s): [34].
+This might be a bug and should be reported.
+18:09:42  INFO      Data has been written to cache!
+18:09:42  INFO      No cached data found for timing_app_data. Loading data...
+18:09:42  INFO      Fetching timing app data...
+18:09:42  INFO      Data has been written to cache!
+18:09:42  INFO      Processing timing data...
+18:09:44  INFO      No cached data found for weather_data. Loading data...
+18:09:44  INFO      Fetching weather data...
+18:09:45  INFO      Data has been written to cache!
+18:09:45  INFO      Finished loading data for 20 drivers: ['1', '16', '11', '4', '14', '55', '63', '44', '18', '10', '23', '24', '2', '31', '77', '81', '21', '20', '22', '27']
+18:09:45  INFO        R: collected 1354 rows.
+18:10:15  INFO      
+Round 10: British Grand Prix
+18:10:15  INFO        Loading Q session...
+18:10:15  INFO      Loading data for British Grand Prix - Qualifying [v3.8.1]
+18:10:15  INFO      Using cached data for session_info
+18:10:15  INFO      No cached data found for driver_info. Loading data...
+18:10:15  INFO      Fetching driver list...
+18:10:17  INFO      Data has been written to cache!
+18:10:17  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:10:17  INFO      No cached data found for session_status_data. Loading data...
+18:10:17  INFO      Fetching session status data...
+18:10:18  INFO      Data has been written to cache!
+18:10:18  INFO      No cached data found for track_status_data. Loading data...
+18:10:18  INFO      Fetching track status data...
+18:10:18  INFO      Data has been written to cache!
+18:10:18  INFO      No cached data found for _extended_timing_data. Loading data...
+18:10:18  INFO      Fetching timing data...
+18:10:20  INFO      Parsing timing data...
+18:10:20  INFO      Data has been written to cache!
+18:10:20  INFO      No cached data found for timing_app_data. Loading data...
+18:10:20  INFO      Fetching timing app data...
+18:10:21  INFO      Data has been written to cache!
+18:10:21  INFO      Processing timing data...
+18:10:22  INFO      No cached data found for weather_data. Loading data...
+18:10:22  INFO      Fetching weather data...
+18:10:23  INFO      Data has been written to cache!
+18:10:23  INFO      Finished loading data for 20 drivers: ['1', '4', '81', '16', '55', '63', '44', '23', '14', '10', '27', '18', '31', '2', '77', '11', '22', '24', '21', '20']
+18:10:23  INFO        Q: collected 20 rows.
+18:10:23  INFO        Loading R session...
+18:10:23  INFO      Loading data for British Grand Prix - Race [v3.8.1]
+18:10:23  INFO      Using cached data for session_info
+18:10:23  INFO      Using cached data for driver_info
+18:10:23  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:10:23  INFO      Using cached data for session_status_data
+18:10:23  INFO      Using cached data for lap_count
+18:10:23  INFO      Using cached data for track_status_data
+18:10:23  INFO      Using cached data for _extended_timing_data
+18:10:23  INFO      Using cached data for timing_app_data
+18:10:23  INFO      Processing timing data...
+18:10:24  INFO      Using cached data for weather_data
+18:10:24  INFO      Finished loading data for 20 drivers: ['1', '4', '44', '81', '63', '11', '14', '23', '16', '55', '2', '77', '27', '18', '24', '22', '21', '10', '20', '31']
+18:10:24  INFO        R: collected 971 rows.
+18:10:55  INFO      
+Round 11: Hungarian Grand Prix
+18:10:55  INFO        Loading Q session...
+18:10:55  INFO      Loading data for Hungarian Grand Prix - Qualifying [v3.8.1]
+18:10:55  INFO      Using cached data for session_info
+18:10:55  INFO      Using cached data for driver_info
+18:10:55  INFO      Using cached data for session_status_data
+18:10:55  INFO      Using cached data for track_status_data
+18:10:55  INFO      Using cached data for _extended_timing_data
+18:10:55  INFO      Using cached data for timing_app_data
+18:10:55  INFO      Processing timing data...
+18:10:56  INFO      Using cached data for weather_data
+18:10:56  INFO      Finished loading data for 20 drivers: ['44', '1', '4', '81', '24', '16', '77', '14', '11', '27', '55', '31', '3', '18', '10', '23', '22', '63', '20', '2']
+18:10:56  INFO        Q: collected 20 rows.
+18:10:56  INFO        Loading R session...
+18:10:57  INFO      Loading data for Hungarian Grand Prix - Race [v3.8.1]
+18:10:57  INFO      Using cached data for session_info
+18:10:57  INFO      Using cached data for driver_info
+18:10:57  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:10:57  INFO      Using cached data for session_status_data
+18:10:57  INFO      Using cached data for lap_count
+18:10:57  INFO      Using cached data for track_status_data
+18:10:57  INFO      Using cached data for _extended_timing_data
+18:10:57  INFO      Using cached data for timing_app_data
+18:10:57  INFO      Processing timing data...
+18:11:00  INFO      Using cached data for weather_data
+18:11:00  INFO      Finished loading data for 20 drivers: ['1', '4', '11', '44', '81', '63', '16', '55', '14', '18', '23', '77', '3', '27', '22', '24', '20', '2', '31', '10']
+18:11:00  INFO        R: collected 1252 rows.
+18:11:31  INFO      
+Round 12: Belgian Grand Prix
+18:11:31  INFO        Loading Q session...
+18:11:31  INFO      Loading data for Belgian Grand Prix - Qualifying [v3.8.1]
+18:11:31  INFO      Using cached data for session_info
+18:11:31  INFO      Using cached data for driver_info
+18:11:31  INFO      Using cached data for session_status_data
+18:11:31  INFO      Using cached data for track_status_data
+18:11:31  INFO      Using cached data for _extended_timing_data
+18:11:31  INFO      Using cached data for timing_app_data
+18:11:31  INFO      Processing timing data...
+18:11:32  INFO      Using cached data for weather_data
+18:11:32  INFO      Finished loading data for 20 drivers: ['1', '16', '11', '44', '55', '81', '4', '63', '14', '18', '22', '10', '20', '77', '31', '23', '24', '2', '3', '27']
+18:11:32  INFO        Q: collected 20 rows.
+18:11:32  INFO        Loading R session...
+18:11:32  INFO      Loading data for Belgian Grand Prix - Race [v3.8.1]
+18:11:32  INFO      Using cached data for session_info
+18:11:32  INFO      Using cached data for driver_info
+18:11:33  INFO      Using cached data for session_status_data
+18:11:33  INFO      Using cached data for lap_count
+18:11:33  INFO      Using cached data for track_status_data
+18:11:33  INFO      Using cached data for _extended_timing_data
+18:11:33  INFO      Using cached data for timing_app_data
+18:11:33  INFO      Processing timing data...
+18:11:35  INFO      Using cached data for weather_data
+18:11:35  INFO      Finished loading data for 20 drivers: ['1', '11', '16', '44', '14', '63', '4', '31', '18', '22', '10', '77', '24', '23', '20', '3', '2', '27', '55', '81']
+18:11:35  INFO        R: collected 816 rows.
+18:12:06  INFO      
+Round 13: Dutch Grand Prix
+18:12:06  INFO        Loading Q session...
+18:12:06  INFO      Loading data for Dutch Grand Prix - Qualifying [v3.8.1]
+18:12:06  INFO      Using cached data for session_info
+18:12:06  INFO      Using cached data for driver_info
+18:12:06  INFO      Using cached data for session_status_data
+18:12:06  INFO      Using cached data for track_status_data
+18:12:06  INFO      Using cached data for _extended_timing_data
+18:12:06  INFO      Using cached data for timing_app_data
+18:12:06  INFO      Processing timing data...
+18:12:07  INFO      Using cached data for weather_data
+18:12:07  INFO      Finished loading data for 20 drivers: ['1', '4', '63', '23', '14', '55', '11', '81', '16', '2', '18', '10', '44', '22', '27', '24', '31', '20', '77', '40']
+18:12:07  INFO        Q: collected 20 rows.
+18:12:07  INFO        Loading R session...
+18:12:07  INFO      Loading data for Dutch Grand Prix - Race [v3.8.1]
+18:12:07  INFO      Using cached data for session_info
+18:12:07  INFO      Using cached data for driver_info
+18:12:08  INFO      Using cached data for session_status_data
+18:12:08  INFO      Using cached data for lap_count
+18:12:08  INFO      Using cached data for track_status_data
+18:12:08  INFO      Using cached data for _extended_timing_data
+18:12:08  INFO      Using cached data for timing_app_data
+18:12:08  INFO      Processing timing data...
+18:12:10  INFO      Using cached data for weather_data
+18:12:10  WARNING   Driver 1 completed the race distance 00:02.059000 before the recorded end of the session.
+18:12:10  INFO      Finished loading data for 20 drivers: ['1', '14', '10', '11', '55', '44', '4', '23', '81', '31', '18', '27', '40', '77', '22', '20', '63', '24', '16', '2']
+18:12:10  INFO        R: collected 1343 rows.
+18:12:41  INFO      
+Round 14: Italian Grand Prix
+18:12:41  INFO        Loading Q session...
+18:12:41  INFO      Loading data for Italian Grand Prix - Qualifying [v3.8.1]
+18:12:41  INFO      Using cached data for session_info
+18:12:41  INFO      Using cached data for driver_info
+18:12:42  INFO      Using cached data for session_status_data
+18:12:42  INFO      Using cached data for track_status_data
+18:12:42  INFO      Using cached data for _extended_timing_data
+18:12:42  INFO      Using cached data for timing_app_data
+18:12:42  INFO      Processing timing data...
+18:12:43  INFO      Using cached data for weather_data
+18:12:43  INFO      Finished loading data for 20 drivers: ['55', '1', '16', '63', '11', '23', '81', '44', '4', '14', '22', '40', '27', '77', '2', '24', '10', '31', '20', '18']
+18:12:43  INFO        Q: collected 20 rows.
+18:12:43  INFO        Loading R session...
+18:12:43  INFO      Loading data for Italian Grand Prix - Race [v3.8.1]
+18:12:43  INFO      Using cached data for session_info
+18:12:43  INFO      Using cached data for driver_info
+18:12:43  INFO      Using cached data for session_status_data
+18:12:43  INFO      Using cached data for lap_count
+18:12:43  INFO      Using cached data for track_status_data
+18:12:43  INFO      Using cached data for _extended_timing_data
+18:12:43  INFO      Using cached data for timing_app_data
+18:12:43  INFO      Processing timing data...
+18:12:45  INFO      Using cached data for weather_data
+18:12:45  WARNING   Driver 1 completed the race distance 06:25.888000 before the recorded end of the session.
+18:12:45  WARNING   Driver 11 completed the race distance 06:19.824000 before the recorded end of the session.
+18:12:45  WARNING   Driver 55 completed the race distance 06:14.695000 before the recorded end of the session.
+18:12:45  WARNING   Driver 16 completed the race distance 06:14.511000 before the recorded end of the session.
+18:12:45  WARNING   Driver 63 completed the race distance 06:07.860000 before the recorded end of the session.
+18:12:45  WARNING   Driver 44 completed the race distance 05:48.209000 before the recorded end of the session.
+18:12:45  WARNING   Driver 23 completed the race distance 05:40.782000 before the recorded end of the session.
+18:12:45  WARNING   Driver 4 completed the race distance 05:40.439000 before the recorded end of the session.
+18:12:45  WARNING   Driver 14 completed the race distance 05:39.594000 before the recorded end of the session.
+18:12:45  INFO      Finished loading data for 20 drivers: ['1', '11', '55', '16', '63', '44', '23', '4', '14', '77', '40', '81', '2', '24', '10', '18', '27', '20', '31', '22']
+18:12:45  INFO        R: collected 958 rows.
+18:13:16  INFO      
+Round 15: Singapore Grand Prix
+18:13:16  INFO        Loading Q session...
+18:13:16  INFO      Loading data for Singapore Grand Prix - Qualifying [v3.8.1]
+18:13:16  INFO      Using cached data for session_info
+18:13:16  INFO      Using cached data for driver_info
+18:13:16  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:13:16  INFO      Using cached data for session_status_data
+18:13:16  INFO      Using cached data for track_status_data
+18:13:16  INFO      Using cached data for _extended_timing_data
+18:13:16  INFO      Using cached data for timing_app_data
+18:13:16  INFO      Processing timing data...
+18:13:17  INFO      Using cached data for weather_data
+18:13:17  INFO      Finished loading data for 20 drivers: ['55', '63', '16', '4', '44', '20', '14', '31', '27', '40', '1', '10', '11', '23', '22', '77', '81', '2', '24', '18']
+18:13:17  INFO        Q: collected 20 rows.
+18:13:17  INFO        Loading R session...
+18:13:17  INFO      Loading data for Singapore Grand Prix - Race [v3.8.1]
+18:13:17  INFO      Using cached data for session_info
+18:13:17  INFO      Using cached data for driver_info
+18:13:17  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:13:17  INFO      Using cached data for session_status_data
+18:13:17  INFO      Using cached data for lap_count
+18:13:17  INFO      Using cached data for track_status_data
+18:13:17  INFO      Using cached data for _extended_timing_data
+18:13:17  INFO      Using cached data for timing_app_data
+18:13:17  INFO      Processing timing data...
+18:13:17  WARNING   No lap data for driver 18
+18:13:18  WARNING   Failed to perform lap accuracy check - all laps marked as inaccurate (driver 18)
+18:13:18  INFO      Using cached data for weather_data
+18:13:18  INFO      Finished loading data for 20 drivers: ['55', '4', '44', '16', '1', '10', '81', '11', '40', '20', '23', '24', '27', '2', '14', '63', '77', '31', '22', '18']
+18:13:18  INFO        R: collected 1088 rows.
+18:13:49  INFO      
+Round 16: Japanese Grand Prix
+18:13:49  INFO        Loading Q session...
+18:13:49  INFO      Loading data for Japanese Grand Prix - Qualifying [v3.8.1]
+18:13:49  INFO      Using cached data for session_info
+18:13:49  INFO      Using cached data for driver_info
+18:13:49  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:13:49  INFO      Using cached data for session_status_data
+18:13:49  INFO      Using cached data for track_status_data
+18:13:49  INFO      Using cached data for _extended_timing_data
+18:13:49  INFO      Using cached data for timing_app_data
+18:13:49  INFO      Processing timing data...
+18:13:49  INFO      Using cached data for weather_data
+18:13:49  INFO      Finished loading data for 20 drivers: ['1', '81', '4', '16', '11', '55', '44', '63', '22', '14', '40', '10', '23', '31', '20', '77', '18', '27', '24', '2']
+18:13:49  INFO        Q: collected 20 rows.
+18:13:49  INFO        Loading R session...
+18:13:49  INFO      Loading data for Japanese Grand Prix - Race [v3.8.1]
+18:13:49  INFO      Using cached data for session_info
+18:13:49  INFO      Using cached data for driver_info
+18:13:50  INFO      Using cached data for session_status_data
+18:13:50  INFO      Using cached data for lap_count
+18:13:50  INFO      Using cached data for track_status_data
+18:13:50  INFO      Using cached data for _extended_timing_data
+18:13:50  INFO      Using cached data for timing_app_data
+18:13:50  INFO      Processing timing data...
+18:13:51  INFO      Using cached data for weather_data
+18:13:51  WARNING   Driver 1 completed the race distance 00:00.076000 before the recorded end of the session.
+18:13:51  INFO      Finished loading data for 20 drivers: ['1', '4', '81', '16', '44', '55', '63', '14', '31', '10', '40', '22', '24', '27', '20', '23', '2', '18', '11', '77']
+18:13:51  INFO        R: collected 880 rows.
+18:14:22  INFO      
+Round 17: Qatar Grand Prix
+18:14:22  INFO        Loading Q session...
+18:14:22  INFO      Loading data for Qatar Grand Prix - Qualifying [v3.8.1]
+18:14:22  INFO      Using cached data for session_info
+18:14:22  INFO      Using cached data for driver_info
+18:14:22  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:14:22  INFO      Using cached data for session_status_data
+18:14:22  INFO      Using cached data for track_status_data
+18:14:22  INFO      Using cached data for _extended_timing_data
+18:14:22  INFO      Using cached data for timing_app_data
+18:14:22  INFO      Processing timing data...
+18:14:22  INFO      Using cached data for weather_data
+18:14:22  INFO      Finished loading data for 20 drivers: ['1', '63', '44', '14', '16', '81', '10', '31', '77', '4', '22', '55', '11', '23', '27', '2', '18', '40', '20', '24']
+18:14:22  INFO        Q: collected 20 rows.
+18:14:22  INFO        Loading R session...
+18:14:22  INFO      Loading data for Qatar Grand Prix - Race [v3.8.1]
+18:14:22  INFO      Using cached data for session_info
+18:14:22  INFO      Using cached data for driver_info
+18:14:23  INFO      Using cached data for session_status_data
+18:14:23  INFO      Using cached data for lap_count
+18:14:23  INFO      Using cached data for track_status_data
+18:14:23  INFO      Using cached data for _extended_timing_data
+18:14:23  INFO      Using cached data for timing_app_data
+18:14:23  INFO      Processing timing data...
+18:14:23  WARNING   No lap data for driver 55
+18:14:24  WARNING   Failed to perform lap accuracy check - all laps marked as inaccurate (driver 55)
+18:14:24  INFO      Using cached data for weather_data
+18:14:24  INFO      Finished loading data for 20 drivers: ['1', '81', '4', '63', '16', '14', '31', '77', '24', '11', '18', '10', '23', '20', '22', '27', '40', '2', '44', '55']
+18:14:24  INFO        R: collected 1006 rows.
+18:14:54  INFO      
+Round 18: United States Grand Prix
+18:14:54  INFO        Loading Q session...
+18:14:54  INFO      Loading data for United States Grand Prix - Qualifying [v3.8.1]
+18:14:54  INFO      Using cached data for session_info
+18:14:54  INFO      Using cached data for driver_info
+18:14:54  INFO      Using cached data for session_status_data
+18:14:54  INFO      Using cached data for track_status_data
+18:14:54  INFO      Using cached data for _extended_timing_data
+18:14:54  INFO      Using cached data for timing_app_data
+18:14:54  INFO      Processing timing data...
+18:14:55  INFO      Using cached data for weather_data
+18:14:55  INFO      Finished loading data for 20 drivers: ['16', '4', '44', '55', '63', '1', '10', '31', '11', '81', '22', '24', '77', '20', '3', '27', '14', '23', '18', '2']
+18:14:55  INFO        Q: collected 20 rows.
+18:14:55  INFO        Loading R session...
+18:14:55  INFO      Loading data for United States Grand Prix - Race [v3.8.1]
+18:14:55  INFO      Using cached data for session_info
+18:14:55  INFO      Using cached data for driver_info
+18:14:55  INFO      Using cached data for session_status_data
+18:14:55  INFO      Using cached data for lap_count
+18:14:55  INFO      Using cached data for track_status_data
+18:14:55  INFO      Using cached data for _extended_timing_data
+18:14:55  INFO      Using cached data for timing_app_data
+18:14:55  INFO      Processing timing data...
+18:14:57  INFO      Using cached data for weather_data
+18:14:57  INFO      Finished loading data for 20 drivers: ['1', '4', '55', '11', '63', '10', '18', '22', '23', '2', '27', '77', '24', '20', '3', '14', '81', '31', '44', '16']
+18:14:57  INFO        R: collected 1014 rows.
+18:15:27  INFO      
+Round 19: Mexico City Grand Prix
+18:15:27  INFO        Loading Q session...
+18:15:27  INFO      Loading data for Mexico City Grand Prix - Qualifying [v3.8.1]
+18:15:27  INFO      Using cached data for session_info
+18:15:27  INFO      Using cached data for driver_info
+18:15:28  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:15:28  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:15:28  INFO      Using cached data for session_status_data
+18:15:28  INFO      Using cached data for track_status_data
+18:15:28  INFO      Using cached data for _extended_timing_data
+18:15:28  INFO      Using cached data for timing_app_data
+18:15:28  INFO      Processing timing data...
+18:15:28  INFO      Using cached data for weather_data
+18:15:28  INFO      Finished loading data for 20 drivers: ['16', '55', '1', '3', '11', '44', '81', '63', '77', '24', '10', '27', '14', '23', '22', '31', '20', '18', '4', '2']
+18:15:28  INFO        Q: collected 20 rows.
+18:15:28  INFO        Loading R session...
+18:15:28  INFO      Loading data for Mexico City Grand Prix - Race [v3.8.1]
+18:15:28  INFO      Using cached data for session_info
+18:15:28  INFO      Using cached data for driver_info
+18:15:28  INFO      Using cached data for session_status_data
+18:15:28  INFO      Using cached data for lap_count
+18:15:28  INFO      Using cached data for track_status_data
+18:15:29  INFO      Using cached data for _extended_timing_data
+18:15:29  INFO      Using cached data for timing_app_data
+18:15:29  INFO      Processing timing data...
+18:15:30  INFO      Using cached data for weather_data
+18:15:30  INFO      Finished loading data for 20 drivers: ['1', '44', '16', '55', '4', '63', '3', '81', '23', '31', '10', '22', '27', '24', '77', '2', '18', '14', '20', '11']
+18:15:30  INFO        R: collected 1282 rows.
+18:16:00  INFO      
+Round 20: São Paulo Grand Prix
+18:16:00  INFO        Loading Q session...
+18:16:00  INFO      Loading data for São Paulo Grand Prix - Qualifying [v3.8.1]
+18:16:00  INFO      Using cached data for session_info
+18:16:00  INFO      Using cached data for driver_info
+18:16:01  INFO      Using cached data for session_status_data
+18:16:01  INFO      Using cached data for track_status_data
+18:16:01  INFO      Using cached data for _extended_timing_data
+18:16:01  INFO      Using cached data for timing_app_data
+18:16:01  INFO      Processing timing data...
+18:16:01  INFO      Using cached data for weather_data
+18:16:01  INFO      Finished loading data for 20 drivers: ['1', '16', '18', '14', '44', '63', '4', '55', '11', '81', '27', '31', '10', '20', '23', '22', '3', '77', '2', '24']
+18:16:01  INFO        Q: collected 20 rows.
+18:16:01  INFO        Loading R session...
+18:16:01  INFO      Loading data for São Paulo Grand Prix - Race [v3.8.1]
+18:16:01  INFO      Using cached data for session_info
+18:16:01  INFO      Using cached data for driver_info
+18:16:02  INFO      Using cached data for session_status_data
+18:16:02  INFO      Using cached data for lap_count
+18:16:02  INFO      Using cached data for track_status_data
+18:16:02  INFO      Using cached data for _extended_timing_data
+18:16:02  INFO      Using cached data for timing_app_data
+18:16:02  INFO      Processing timing data...
+18:16:03  INFO      Using cached data for weather_data
+18:16:03  INFO      Finished loading data for 20 drivers: ['1', '4', '14', '11', '18', '55', '10', '44', '22', '31', '2', '27', '3', '81', '63', '77', '24', '20', '23', '16']
+18:16:03  INFO        R: collected 1109 rows.
+18:16:33  INFO      
+Round 21: Las Vegas Grand Prix
+18:16:33  INFO        Loading Q session...
+18:16:33  INFO      Loading data for Las Vegas Grand Prix - Qualifying [v3.8.1]
+18:16:33  INFO      Using cached data for session_info
+18:16:33  INFO      Using cached data for driver_info
+18:16:34  INFO      Using cached data for session_status_data
+18:16:34  INFO      Using cached data for track_status_data
+18:16:34  INFO      Using cached data for _extended_timing_data
+18:16:34  INFO      Using cached data for timing_app_data
+18:16:34  INFO      Processing timing data...
+18:16:34  INFO      Using cached data for weather_data
+18:16:34  INFO      Finished loading data for 20 drivers: ['16', '55', '1', '63', '10', '23', '2', '77', '20', '14', '44', '11', '27', '18', '3', '4', '31', '24', '81', '22']
+18:16:34  INFO        Q: collected 20 rows.
+18:16:34  INFO        Loading R session...
+18:16:34  INFO      Loading data for Las Vegas Grand Prix - Race [v3.8.1]
+18:16:34  INFO      Using cached data for session_info
+18:16:34  INFO      Using cached data for driver_info
+18:16:35  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:16:35  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:16:35  INFO      Using cached data for session_status_data
+18:16:35  INFO      Using cached data for lap_count
+18:16:35  INFO      Using cached data for track_status_data
+18:16:35  INFO      Using cached data for _extended_timing_data
+18:16:35  INFO      Using cached data for timing_app_data
+18:16:35  INFO      Processing timing data...
+18:16:36  INFO      Using cached data for weather_data
+18:16:36  WARNING   Driver 1 completed the race distance 00:00.001000 before the recorded end of the session.
+18:16:36  INFO      Finished loading data for 20 drivers: ['1', '16', '11', '31', '18', '55', '44', '63', '14', '81', '10', '23', '20', '3', '24', '2', '77', '22', '27', '4']
+18:16:36  INFO        R: collected 946 rows.
+18:17:06  INFO      
+Round 22: Abu Dhabi Grand Prix
+18:17:06  INFO        Loading Q session...
+18:17:06  INFO      Loading data for Abu Dhabi Grand Prix - Qualifying [v3.8.1]
+18:17:06  INFO      Using cached data for session_info
+18:17:06  INFO      Using cached data for driver_info
+18:17:07  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:17:07  INFO      Using cached data for session_status_data
+18:17:07  INFO      Using cached data for track_status_data
+18:17:07  INFO      Using cached data for _extended_timing_data
+18:17:07  INFO      Using cached data for timing_app_data
+18:17:07  INFO      Processing timing data...
+18:17:07  INFO      Using cached data for weather_data
+18:17:07  INFO      Finished loading data for 20 drivers: ['1', '16', '81', '63', '4', '22', '14', '27', '11', '10', '44', '31', '18', '23', '3', '55', '20', '77', '24', '2']
+18:17:07  INFO        Q: collected 20 rows.
+18:17:07  INFO        Loading R session...
+18:17:07  INFO      Loading data for Abu Dhabi Grand Prix - Race [v3.8.1]
+18:17:07  INFO      Using cached data for session_info
+18:17:07  INFO      Using cached data for driver_info
+18:17:07  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:17:07  INFO      Using cached data for session_status_data
+18:17:07  INFO      Using cached data for lap_count
+18:17:07  INFO      Using cached data for track_status_data
+18:17:07  INFO      Using cached data for _extended_timing_data
+18:17:07  INFO      Using cached data for timing_app_data
+18:17:07  INFO      Processing timing data...
+18:17:09  INFO      Using cached data for weather_data
+18:17:09  INFO      Finished loading data for 20 drivers: ['1', '16', '63', '11', '4', '81', '14', '22', '44', '18', '3', '31', '10', '23', '27', '2', '24', '55', '77', '20']
+18:17:09  INFO        R: collected 1157 rows.
+18:17:39  INFO      ============================================================
+18:17:39  INFO      Season: 2024
+18:17:39  INFO      ============================================================
+18:17:39  INFO      
+Round 01: Bahrain Grand Prix
+18:17:39  INFO        Loading Q session...
+18:17:39  INFO      Loading data for Bahrain Grand Prix - Qualifying [v3.8.1]
+18:17:39  INFO      Using cached data for session_info
+18:17:39  INFO      Using cached data for driver_info
+18:17:40  INFO      Using cached data for session_status_data
+18:17:40  INFO      Using cached data for track_status_data
+18:17:40  INFO      Using cached data for _extended_timing_data
+18:17:40  INFO      Using cached data for timing_app_data
+18:17:40  INFO      Processing timing data...
+18:17:40  INFO      Using cached data for weather_data
+18:17:40  INFO      Finished loading data for 20 drivers: ['1', '16', '63', '55', '11', '14', '4', '81', '44', '27', '22', '18', '23', '3', '20', '77', '24', '2', '31', '10']
+18:17:40  INFO        Q: collected 20 rows.
+18:17:40  INFO        Loading R session...
+18:17:40  INFO      Loading data for Bahrain Grand Prix - Race [v3.8.1]
+18:17:40  INFO      Using cached data for session_info
+18:17:40  INFO      Using cached data for driver_info
+18:17:41  INFO      Using cached data for session_status_data
+18:17:41  INFO      Using cached data for lap_count
+18:17:41  INFO      Using cached data for track_status_data
+18:17:41  INFO      Using cached data for _extended_timing_data
+18:17:41  INFO      Using cached data for timing_app_data
+18:17:41  INFO      Processing timing data...
+18:17:42  INFO      Using cached data for weather_data
+18:17:42  INFO      Finished loading data for 20 drivers: ['1', '11', '55', '16', '63', '4', '44', '81', '14', '18', '24', '20', '3', '22', '23', '27', '31', '10', '77', '2']
+18:17:42  INFO        R: collected 1129 rows.
+18:18:12  INFO      
+Round 02: Saudi Arabian Grand Prix
+18:18:12  INFO        Loading Q session...
+18:18:12  INFO      Loading data for Saudi Arabian Grand Prix - Qualifying [v3.8.1]
+18:18:12  INFO      Using cached data for session_info
+18:18:12  INFO      Using cached data for driver_info
+18:18:12  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:18:12  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:18:12  INFO      Using cached data for session_status_data
+18:18:12  INFO      Using cached data for track_status_data
+18:18:12  INFO      Using cached data for _extended_timing_data
+18:18:12  INFO      Using cached data for timing_app_data
+18:18:12  INFO      Processing timing data...
+18:18:13  INFO      Using cached data for weather_data
+18:18:13  INFO      Finished loading data for 20 drivers: ['1', '16', '11', '14', '81', '4', '63', '44', '22', '18', '38', '23', '20', '3', '27', '77', '31', '10', '2', '24']
+18:18:13  INFO        Q: collected 20 rows.
+18:18:13  INFO        Loading R session...
+18:18:13  INFO      Loading data for Saudi Arabian Grand Prix - Race [v3.8.1]
+18:18:13  INFO      Using cached data for session_info
+18:18:13  INFO      Using cached data for driver_info
+18:18:13  INFO      Using cached data for session_status_data
+18:18:13  INFO      Using cached data for lap_count
+18:18:13  INFO      Using cached data for track_status_data
+18:18:13  INFO      Using cached data for _extended_timing_data
+18:18:13  INFO      Using cached data for timing_app_data
+18:18:13  INFO      Processing timing data...
+18:18:14  INFO      Using cached data for weather_data
+18:18:14  INFO      Finished loading data for 20 drivers: ['1', '11', '16', '81', '14', '63', '38', '4', '44', '27', '23', '20', '31', '2', '22', '3', '77', '24', '18', '10']
+18:18:14  INFO        R: collected 901 rows.
+18:18:45  INFO      
+Round 03: Australian Grand Prix
+18:18:45  INFO        Loading Q session...
+18:18:45  INFO      Loading data for Australian Grand Prix - Qualifying [v3.8.1]
+18:18:45  INFO      Using cached data for session_info
+18:18:45  INFO      Using cached data for driver_info
+18:18:45  INFO      Using cached data for session_status_data
+18:18:45  INFO      Using cached data for track_status_data
+18:18:45  INFO      Using cached data for _extended_timing_data
+18:18:45  INFO      Using cached data for timing_app_data
+18:18:45  INFO      Processing timing data...
+18:18:45  INFO      Using cached data for weather_data
+18:18:45  INFO      Finished loading data for 19 drivers: ['1', '55', '11', '4', '16', '81', '63', '22', '18', '14', '44', '23', '77', '20', '31', '27', '10', '3', '24']
+18:18:46  INFO        Q: collected 19 rows.
+18:18:46  INFO        Loading R session...
+18:18:46  INFO      Loading data for Australian Grand Prix - Race [v3.8.1]
+18:18:46  INFO      Using cached data for session_info
+18:18:46  INFO      Using cached data for driver_info
+18:18:46  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:18:46  INFO      Using cached data for session_status_data
+18:18:46  INFO      Using cached data for lap_count
+18:18:46  INFO      Using cached data for track_status_data
+18:18:46  INFO      Using cached data for _extended_timing_data
+18:18:46  INFO      Using cached data for timing_app_data
+18:18:46  INFO      Processing timing data...
+18:18:47  INFO      Using cached data for weather_data
+18:18:47  INFO      Finished loading data for 19 drivers: ['55', '16', '4', '81', '11', '18', '22', '14', '27', '20', '23', '3', '10', '77', '24', '31', '63', '44', '1']
+18:18:47  INFO        R: collected 998 rows.
+18:19:17  INFO      
+Round 04: Japanese Grand Prix
+18:19:17  INFO        Loading Q session...
+18:19:17  INFO      Loading data for Japanese Grand Prix - Qualifying [v3.8.1]
+18:19:17  INFO      Using cached data for session_info
+18:19:17  INFO      Using cached data for driver_info
+18:19:17  INFO      Using cached data for session_status_data
+18:19:17  INFO      Using cached data for track_status_data
+18:19:17  INFO      Using cached data for _extended_timing_data
+18:19:17  INFO      Using cached data for timing_app_data
+18:19:17  INFO      Processing timing data...
+18:19:18  INFO      Using cached data for weather_data
+18:19:18  INFO      Finished loading data for 20 drivers: ['1', '11', '4', '55', '14', '81', '44', '16', '63', '22', '3', '27', '77', '23', '31', '18', '10', '20', '2', '24']
+18:19:18  INFO        Q: collected 20 rows.
+18:19:18  INFO        Loading R session...
+18:19:18  INFO      Loading data for Japanese Grand Prix - Race [v3.8.1]
+18:19:18  INFO      Using cached data for session_info
+18:19:18  INFO      Using cached data for driver_info
+18:19:18  INFO      Using cached data for session_status_data
+18:19:18  INFO      Using cached data for lap_count
+18:19:18  INFO      Using cached data for track_status_data
+18:19:18  INFO      Using cached data for _extended_timing_data
+18:19:18  INFO      Using cached data for timing_app_data
+18:19:18  INFO      Processing timing data...
+18:19:19  INFO      Using cached data for weather_data
+18:19:19  INFO      Finished loading data for 20 drivers: ['1', '11', '55', '16', '4', '14', '63', '81', '44', '22', '27', '18', '20', '77', '31', '10', '2', '24', '3', '23']
+18:19:19  INFO        R: collected 907 rows.
+18:19:50  INFO      
+Round 05: Chinese Grand Prix
+18:19:50  INFO        Loading Q session...
+18:19:50  INFO      Loading data for Chinese Grand Prix - Qualifying [v3.8.1]
+18:19:50  INFO      Using cached data for session_info
+18:19:50  INFO      Using cached data for driver_info
+18:19:50  INFO      Using cached data for session_status_data
+18:19:50  INFO      Using cached data for track_status_data
+18:19:50  INFO      Using cached data for _extended_timing_data
+18:19:50  INFO      Using cached data for timing_app_data
+18:19:50  INFO      Processing timing data...
+18:19:51  INFO      Using cached data for weather_data
+18:19:51  INFO      Finished loading data for 20 drivers: ['1', '11', '14', '4', '81', '16', '55', '63', '27', '77', '18', '3', '31', '23', '10', '24', '20', '44', '22', '2']
+18:19:51  INFO        Q: collected 20 rows.
+18:19:51  INFO        Loading R session...
+18:19:51  INFO      Loading data for Chinese Grand Prix - Race [v3.8.1]
+18:19:51  INFO      Using cached data for session_info
+18:19:51  INFO      Using cached data for driver_info
+18:19:51  INFO      Using cached data for session_status_data
+18:19:51  INFO      Using cached data for lap_count
+18:19:51  INFO      Using cached data for track_status_data
+18:19:51  INFO      Using cached data for _extended_timing_data
+18:19:51  INFO      Using cached data for timing_app_data
+18:19:51  INFO      Processing timing data...
+18:19:52  INFO      Using cached data for weather_data
+18:19:52  WARNING   Driver 1 completed the race distance 00:08.313000 before the recorded end of the session.
+18:19:52  INFO      Finished loading data for 20 drivers: ['1', '4', '11', '16', '55', '63', '14', '81', '44', '27', '31', '23', '10', '24', '18', '20', '2', '3', '22', '77']
+18:19:52  INFO        R: collected 1032 rows.
+18:20:23  INFO      
+Round 06: Miami Grand Prix
+18:20:23  INFO        Loading Q session...
+18:20:23  INFO      Loading data for Miami Grand Prix - Qualifying [v3.8.1]
+18:20:23  INFO      Using cached data for session_info
+18:20:23  INFO      Using cached data for driver_info
+18:20:23  INFO      Using cached data for session_status_data
+18:20:23  INFO      Using cached data for track_status_data
+18:20:23  INFO      Using cached data for _extended_timing_data
+18:20:23  INFO      Using cached data for timing_app_data
+18:20:23  INFO      Processing timing data...
+18:20:24  INFO      Using cached data for weather_data
+18:20:24  INFO      Finished loading data for 20 drivers: ['1', '16', '55', '11', '4', '81', '63', '44', '27', '22', '18', '10', '31', '23', '14', '77', '2', '3', '20', '24']
+18:20:24  INFO        Q: collected 20 rows.
+18:20:24  INFO        Loading R session...
+18:20:24  INFO      Loading data for Miami Grand Prix - Race [v3.8.1]
+18:20:24  INFO      Using cached data for session_info
+18:20:24  INFO      Using cached data for driver_info
+18:20:24  INFO      Using cached data for session_status_data
+18:20:24  INFO      Using cached data for lap_count
+18:20:24  INFO      Using cached data for track_status_data
+18:20:24  INFO      Using cached data for _extended_timing_data
+18:20:24  INFO      Using cached data for timing_app_data
+18:20:24  INFO      Processing timing data...
+18:20:25  INFO      Using cached data for weather_data
+18:20:25  INFO      Finished loading data for 20 drivers: ['4', '1', '16', '11', '55', '44', '22', '63', '14', '31', '27', '10', '81', '24', '3', '77', '18', '23', '20', '2']
+18:20:25  INFO        R: collected 1111 rows.
+18:20:55  INFO      
+Round 07: Emilia Romagna Grand Prix
+18:20:55  INFO        Loading Q session...
+18:20:55  INFO      Loading data for Emilia Romagna Grand Prix - Qualifying [v3.8.1]
+18:20:55  INFO      Using cached data for session_info
+18:20:55  INFO      Using cached data for driver_info
+18:20:56  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:20:56  INFO      Using cached data for session_status_data
+18:20:56  INFO      Using cached data for track_status_data
+18:20:56  INFO      Using cached data for _extended_timing_data
+18:20:56  INFO      Using cached data for timing_app_data
+18:20:56  INFO      Processing timing data...
+18:20:56  INFO      Using cached data for weather_data
+18:20:56  INFO      Finished loading data for 20 drivers: ['1', '81', '4', '16', '55', '63', '22', '44', '3', '27', '11', '31', '18', '23', '10', '77', '24', '20', '14', '2']
+18:20:56  INFO        Q: collected 20 rows.
+18:20:56  INFO        Loading R session...
+18:20:56  INFO      Loading data for Emilia Romagna Grand Prix - Race [v3.8.1]
+18:20:56  INFO      Using cached data for session_info
+18:20:56  INFO      Using cached data for driver_info
+18:20:57  INFO      Using cached data for session_status_data
+18:20:57  INFO      Using cached data for lap_count
+18:20:57  INFO      Using cached data for track_status_data
+18:20:57  INFO      Using cached data for _extended_timing_data
+18:20:57  INFO      Using cached data for timing_app_data
+18:20:57  INFO      Processing timing data...
+18:20:58  INFO      Using cached data for weather_data
+18:20:58  INFO      Finished loading data for 20 drivers: ['1', '4', '16', '81', '55', '44', '63', '11', '18', '22', '27', '20', '3', '31', '24', '10', '2', '77', '14', '23']
+18:20:58  INFO        R: collected 1238 rows.
+18:21:28  INFO      
+Round 08: Monaco Grand Prix
+18:21:28  INFO        Loading Q session...
+18:21:28  INFO      Loading data for Monaco Grand Prix - Qualifying [v3.8.1]
+18:21:28  INFO      Using cached data for session_info
+18:21:28  INFO      Using cached data for driver_info
+18:21:29  INFO      Using cached data for session_status_data
+18:21:29  INFO      Using cached data for track_status_data
+18:21:29  INFO      Using cached data for _extended_timing_data
+18:21:29  INFO      Using cached data for timing_app_data
+18:21:29  INFO      Processing timing data...
+18:21:29  INFO      Using cached data for weather_data
+18:21:29  INFO      Finished loading data for 20 drivers: ['16', '81', '55', '4', '63', '1', '44', '22', '23', '10', '31', '3', '18', '27', '14', '2', '20', '11', '77', '24']
+18:21:29  INFO        Q: collected 20 rows.
+18:21:29  INFO        Loading R session...
+18:21:29  INFO      Loading data for Monaco Grand Prix - Race [v3.8.1]
+18:21:29  INFO      Using cached data for session_info
+18:21:29  INFO      Using cached data for driver_info
+18:21:29  INFO      Using cached data for session_status_data
+18:21:29  INFO      Using cached data for lap_count
+18:21:29  INFO      Using cached data for track_status_data
+18:21:29  INFO      Using cached data for _extended_timing_data
+18:21:29  INFO      Using cached data for timing_app_data
+18:21:29  INFO      Processing timing data...
+18:21:31  INFO      Using cached data for weather_data
+18:21:31  INFO      Finished loading data for 20 drivers: ['16', '81', '55', '4', '63', '1', '44', '22', '23', '10', '14', '3', '77', '18', '2', '24', '31', '11', '27', '20']
+18:21:31  INFO        R: collected 1237 rows.
+18:22:01  INFO      
+Round 09: Canadian Grand Prix
+18:22:01  INFO        Loading Q session...
+18:22:01  INFO      Loading data for Canadian Grand Prix - Qualifying [v3.8.1]
+18:22:01  INFO      Using cached data for session_info
+18:22:01  INFO      Using cached data for driver_info
+18:22:01  INFO      Using cached data for session_status_data
+18:22:01  INFO      Using cached data for track_status_data
+18:22:01  INFO      Using cached data for _extended_timing_data
+18:22:01  INFO      Using cached data for timing_app_data
+18:22:01  INFO      Processing timing data...
+18:22:02  INFO      Using cached data for weather_data
+18:22:02  INFO      Finished loading data for 20 drivers: ['63', '1', '4', '81', '3', '14', '44', '22', '18', '23', '16', '55', '2', '20', '10', '11', '77', '31', '27', '24']
+18:22:02  INFO        Q: collected 20 rows.
+18:22:02  INFO        Loading R session...
+18:22:02  INFO      Loading data for Canadian Grand Prix - Race [v3.8.1]
+18:22:02  INFO      Using cached data for session_info
+18:22:02  INFO      Using cached data for driver_info
+18:22:02  INFO      Using cached data for session_status_data
+18:22:02  INFO      Using cached data for lap_count
+18:22:02  INFO      Using cached data for track_status_data
+18:22:02  INFO      Using cached data for _extended_timing_data
+18:22:02  INFO      Using cached data for timing_app_data
+18:22:02  INFO      Processing timing data...
+18:22:04  INFO      Using cached data for weather_data
+18:22:04  INFO      Finished loading data for 20 drivers: ['1', '4', '63', '44', '81', '14', '18', '3', '10', '31', '27', '20', '77', '22', '24', '55', '23', '11', '16', '2']
+18:22:04  INFO        R: collected 1272 rows.
+18:22:34  INFO      
+Round 10: Spanish Grand Prix
+18:22:34  INFO        Loading Q session...
+18:22:34  INFO      Loading data for Spanish Grand Prix - Qualifying [v3.8.1]
+18:22:34  INFO      Using cached data for session_info
+18:22:34  INFO      Using cached data for driver_info
+18:22:34  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:22:34  INFO      Using cached data for session_status_data
+18:22:34  INFO      Using cached data for track_status_data
+18:22:34  INFO      Using cached data for _extended_timing_data
+18:22:34  INFO      Using cached data for timing_app_data
+18:22:34  INFO      Processing timing data...
+18:22:35  INFO      Using cached data for weather_data
+18:22:35  INFO      Finished loading data for 20 drivers: ['4', '1', '44', '63', '16', '55', '10', '11', '31', '81', '14', '77', '27', '18', '24', '20', '22', '3', '23', '2']
+18:22:35  INFO        Q: collected 20 rows.
+18:22:35  INFO        Loading R session...
+18:22:35  INFO      Loading data for Spanish Grand Prix - Race [v3.8.1]
+18:22:35  INFO      Using cached data for session_info
+18:22:35  INFO      Using cached data for driver_info
+18:22:35  INFO      Using cached data for session_status_data
+18:22:35  INFO      Using cached data for lap_count
+18:22:35  INFO      Using cached data for track_status_data
+18:22:35  INFO      Using cached data for _extended_timing_data
+18:22:35  INFO      Using cached data for timing_app_data
+18:22:35  INFO      Processing timing data...
+18:22:37  INFO      Using cached data for weather_data
+18:22:37  WARNING   Driver 1 completed the race distance 00:00.015000 before the recorded end of the session.
+18:22:37  INFO      Finished loading data for 20 drivers: ['1', '4', '44', '63', '16', '55', '81', '11', '10', '31', '27', '14', '24', '18', '3', '77', '20', '23', '22', '2']
+18:22:37  INFO        R: collected 1310 rows.
+18:23:07  INFO      
+Round 11: Austrian Grand Prix
+18:23:07  INFO        Loading Q session...
+18:23:07  INFO      Loading data for Austrian Grand Prix - Qualifying [v3.8.1]
+18:23:07  INFO      Using cached data for session_info
+18:23:07  INFO      Using cached data for driver_info
+18:23:07  INFO      Using cached data for session_status_data
+18:23:07  INFO      Using cached data for track_status_data
+18:23:07  INFO      Using cached data for _extended_timing_data
+18:23:07  INFO      Using cached data for timing_app_data
+18:23:08  INFO      Processing timing data...
+18:23:08  INFO      Using cached data for weather_data
+18:23:08  INFO      Finished loading data for 20 drivers: ['1', '4', '63', '55', '44', '16', '81', '11', '27', '31', '3', '20', '10', '22', '14', '23', '18', '77', '2', '24']
+18:23:08  INFO        Q: collected 20 rows.
+18:23:08  INFO        Loading R session...
+18:23:08  INFO      Loading data for Austrian Grand Prix - Race [v3.8.1]
+18:23:08  INFO      Using cached data for session_info
+18:23:08  INFO      Using cached data for driver_info
+18:23:09  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:23:09  INFO      Using cached data for session_status_data
+18:23:09  INFO      Using cached data for lap_count
+18:23:09  INFO      Using cached data for track_status_data
+18:23:09  INFO      Using cached data for _extended_timing_data
+18:23:09  INFO      Using cached data for timing_app_data
+18:23:09  INFO      Processing timing data...
+18:23:10  INFO      Using cached data for weather_data
+18:23:10  INFO      Finished loading data for 20 drivers: ['63', '81', '55', '44', '1', '27', '11', '20', '3', '10', '16', '31', '18', '22', '23', '77', '24', '14', '2', '4']
+18:23:10  INFO        R: collected 1405 rows.
+18:23:41  INFO      
+Round 12: British Grand Prix
+18:23:41  INFO        Loading Q session...
+18:23:41  INFO      Loading data for British Grand Prix - Qualifying [v3.8.1]
+18:23:41  INFO      Using cached data for session_info
+18:23:41  INFO      Using cached data for driver_info
+18:23:41  INFO      Using cached data for session_status_data
+18:23:41  INFO      Using cached data for track_status_data
+18:23:41  INFO      Using cached data for _extended_timing_data
+18:23:41  INFO      Using cached data for timing_app_data
+18:23:41  INFO      Processing timing data...
+18:23:41  WARNING   Fixed incorrect tyre stint information for driver '18'
+18:23:41  INFO      Using cached data for weather_data
+18:23:41  INFO      Finished loading data for 20 drivers: ['63', '44', '4', '1', '81', '27', '55', '18', '23', '14', '16', '2', '22', '24', '3', '77', '20', '31', '11', '10']
+18:23:41  INFO        Q: collected 20 rows.
+18:23:41  INFO        Loading R session...
+18:23:41  INFO      Loading data for British Grand Prix - Race [v3.8.1]
+18:23:41  INFO      Using cached data for session_info
+18:23:41  INFO      Using cached data for driver_info
+18:23:42  INFO      Using cached data for session_status_data
+18:23:42  INFO      Using cached data for lap_count
+18:23:42  INFO      Using cached data for track_status_data
+18:23:42  INFO      Using cached data for _extended_timing_data
+18:23:42  INFO      Using cached data for timing_app_data
+18:23:42  INFO      Processing timing data...
+18:23:43  INFO      Using cached data for weather_data
+18:23:43  INFO      Finished loading data for 20 drivers: ['44', '1', '4', '81', '55', '27', '18', '14', '23', '22', '2', '20', '3', '16', '77', '31', '11', '24', '63', '10']
+18:23:43  INFO        R: collected 961 rows.
+18:24:13  INFO      
+Round 13: Hungarian Grand Prix
+18:24:13  INFO        Loading Q session...
+18:24:13  INFO      Loading data for Hungarian Grand Prix - Qualifying [v3.8.1]
+18:24:13  INFO      Using cached data for session_info
+18:24:13  INFO      Using cached data for driver_info
+18:24:13  INFO      Using cached data for session_status_data
+18:24:13  INFO      Using cached data for track_status_data
+18:24:13  INFO      Using cached data for _extended_timing_data
+18:24:13  INFO      Using cached data for timing_app_data
+18:24:13  INFO      Processing timing data...
+18:24:14  INFO      Using cached data for weather_data
+18:24:14  INFO      Finished loading data for 20 drivers: ['4', '81', '1', '55', '44', '16', '14', '18', '3', '22', '27', '77', '23', '2', '20', '11', '63', '24', '31', '10']
+18:24:14  INFO        Q: collected 20 rows.
+18:24:14  INFO        Loading R session...
+18:24:14  INFO      Loading data for Hungarian Grand Prix - Race [v3.8.1]
+18:24:14  INFO      Using cached data for session_info
+18:24:14  INFO      Using cached data for driver_info
+18:24:14  INFO      Using cached data for session_status_data
+18:24:14  INFO      Using cached data for lap_count
+18:24:14  INFO      Using cached data for track_status_data
+18:24:15  INFO      Using cached data for _extended_timing_data
+18:24:15  INFO      Using cached data for timing_app_data
+18:24:15  INFO      Processing timing data...
+18:24:16  INFO      Using cached data for weather_data
+18:24:16  INFO      Finished loading data for 20 drivers: ['81', '4', '44', '16', '1', '55', '11', '63', '22', '18', '14', '3', '27', '23', '20', '77', '2', '31', '24', '10']
+18:24:16  INFO        R: collected 1355 rows.
+18:24:47  INFO      
+Round 14: Belgian Grand Prix
+18:24:47  INFO        Loading Q session...
+18:24:47  INFO      Loading data for Belgian Grand Prix - Qualifying [v3.8.1]
+18:24:47  INFO      Using cached data for session_info
+18:24:47  INFO      Using cached data for driver_info
+18:24:47  INFO      Using cached data for session_status_data
+18:24:47  INFO      Using cached data for track_status_data
+18:24:47  INFO      Using cached data for _extended_timing_data
+18:24:47  INFO      Using cached data for timing_app_data
+18:24:47  INFO      Processing timing data...
+18:24:47  INFO      Using cached data for weather_data
+18:24:47  INFO      Finished loading data for 20 drivers: ['1', '16', '11', '44', '4', '81', '63', '55', '14', '31', '23', '10', '3', '77', '18', '27', '20', '22', '2', '24']
+18:24:47  INFO        Q: collected 20 rows.
+18:24:47  INFO        Loading R session...
+18:24:47  INFO      Loading data for Belgian Grand Prix - Race [v3.8.1]
+18:24:47  INFO      Using cached data for session_info
+18:24:47  INFO      Using cached data for driver_info
+18:24:48  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:24:48  INFO      Using cached data for session_status_data
+18:24:48  INFO      Using cached data for lap_count
+18:24:48  INFO      Using cached data for track_status_data
+18:24:48  INFO      Using cached data for _extended_timing_data
+18:24:48  INFO      Using cached data for timing_app_data
+18:24:48  INFO      Processing timing data...
+18:24:48  WARNING   Fixed incorrect tyre stint information for driver '14'
+18:24:48  WARNING   Fixed incorrect tyre stint information for driver '3'
+18:24:48  WARNING   Fixed incorrect tyre stint information for driver '18'
+18:24:48  WARNING   Fixed incorrect tyre stint information for driver '22'
+18:24:49  INFO      Using cached data for weather_data
+18:24:49  INFO      Finished loading data for 20 drivers: ['44', '81', '16', '1', '4', '55', '11', '14', '31', '3', '18', '23', '10', '20', '77', '22', '2', '27', '24', '63']
+18:24:49  INFO        R: collected 841 rows.
+18:25:19  INFO      
+Round 15: Dutch Grand Prix
+18:25:19  INFO        Loading Q session...
+18:25:19  INFO      Loading data for Dutch Grand Prix - Qualifying [v3.8.1]
+18:25:19  INFO      Using cached data for session_info
+18:25:19  INFO      Using cached data for driver_info
+18:25:19  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:25:19  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:25:19  INFO      Using cached data for session_status_data
+18:25:19  INFO      Using cached data for track_status_data
+18:25:20  INFO      Using cached data for _extended_timing_data
+18:25:20  INFO      Using cached data for timing_app_data
+18:25:20  INFO      Processing timing data...
+18:25:20  WARNING   No lap data for driver 2
+18:25:20  WARNING   Failed to perform lap accuracy check - all laps marked as inaccurate (driver 2)
+18:25:20  INFO      Using cached data for weather_data
+18:25:20  INFO      Finished loading data for 20 drivers: ['4', '1', '81', '63', '11', '16', '14', '18', '10', '55', '23', '44', '22', '27', '20', '3', '31', '77', '24', '2']
+18:25:20  INFO        Q: collected 20 rows.
+18:25:20  INFO        Loading R session...
+18:25:20  INFO      Loading data for Dutch Grand Prix - Race [v3.8.1]
+18:25:20  INFO      Using cached data for session_info
+18:25:20  INFO      Using cached data for driver_info
+18:25:20  INFO      Using cached data for session_status_data
+18:25:20  INFO      Using cached data for lap_count
+18:25:20  INFO      Using cached data for track_status_data
+18:25:20  INFO      Using cached data for _extended_timing_data
+18:25:20  INFO      Using cached data for timing_app_data
+18:25:20  INFO      Processing timing data...
+18:25:22  INFO      Using cached data for weather_data
+18:25:22  INFO      Finished loading data for 20 drivers: ['4', '1', '16', '81', '55', '11', '63', '44', '10', '14', '27', '3', '18', '23', '31', '2', '22', '20', '77', '24']
+18:25:22  INFO        R: collected 1426 rows.
+18:25:52  INFO      
+Round 16: Italian Grand Prix
+18:25:52  INFO        Loading Q session...
+18:25:52  INFO      Loading data for Italian Grand Prix - Qualifying [v3.8.1]
+18:25:52  INFO      Using cached data for session_info
+18:25:52  INFO      Using cached data for driver_info
+18:25:52  INFO      Using cached data for session_status_data
+18:25:52  INFO      Using cached data for track_status_data
+18:25:52  INFO      Using cached data for _extended_timing_data
+18:25:52  INFO      Using cached data for timing_app_data
+18:25:52  INFO      Processing timing data...
+18:25:53  INFO      Using cached data for weather_data
+18:25:53  INFO      Finished loading data for 20 drivers: ['4', '81', '63', '16', '55', '44', '1', '11', '23', '27', '14', '3', '20', '10', '31', '22', '18', '43', '77', '24']
+18:25:53  INFO        Q: collected 20 rows.
+18:25:53  INFO        Loading R session...
+18:25:53  INFO      Loading data for Italian Grand Prix - Race [v3.8.1]
+18:25:53  INFO      Using cached data for session_info
+18:25:53  INFO      Using cached data for driver_info
+18:25:53  INFO      Using cached data for session_status_data
+18:25:53  INFO      Using cached data for lap_count
+18:25:53  INFO      Using cached data for track_status_data
+18:25:53  INFO      Using cached data for _extended_timing_data
+18:25:53  INFO      Using cached data for timing_app_data
+18:25:53  INFO      Processing timing data...
+18:25:54  INFO      Using cached data for weather_data
+18:25:55  INFO      Finished loading data for 20 drivers: ['16', '81', '4', '55', '44', '1', '63', '11', '23', '20', '14', '43', '3', '31', '10', '77', '27', '24', '18', '22']
+18:25:55  INFO        R: collected 1008 rows.
+18:26:25  INFO      
+Round 17: Azerbaijan Grand Prix
+18:26:25  INFO        Loading Q session...
+18:26:25  INFO      Loading data for Azerbaijan Grand Prix - Qualifying [v3.8.1]
+18:26:25  INFO      Using cached data for session_info
+18:26:25  INFO      Using cached data for driver_info
+18:26:25  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:26:25  INFO      Using cached data for session_status_data
+18:26:25  INFO      Using cached data for track_status_data
+18:26:25  INFO      Using cached data for _extended_timing_data
+18:26:25  INFO      Using cached data for timing_app_data
+18:26:25  INFO      Processing timing data...
+18:26:26  INFO      Using cached data for weather_data
+18:26:26  INFO      Finished loading data for 20 drivers: ['16', '81', '55', '11', '63', '1', '44', '14', '43', '23', '50', '22', '27', '18', '3', '10', '4', '77', '24', '31']
+18:26:26  INFO        Q: collected 20 rows.
+18:26:26  INFO        Loading R session...
+18:26:26  INFO      Loading data for Azerbaijan Grand Prix - Race [v3.8.1]
+18:26:26  INFO      Using cached data for session_info
+18:26:26  INFO      Using cached data for driver_info
+18:26:26  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:26:26  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:26:26  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:26:26  INFO      Using cached data for session_status_data
+18:26:26  INFO      Using cached data for lap_count
+18:26:26  INFO      Using cached data for track_status_data
+18:26:26  INFO      Using cached data for _extended_timing_data
+18:26:26  INFO      Using cached data for timing_app_data
+18:26:26  INFO      Processing timing data...
+18:26:27  INFO      Using cached data for weather_data
+18:26:28  INFO      Finished loading data for 20 drivers: ['81', '16', '63', '4', '1', '14', '23', '43', '44', '50', '27', '10', '3', '24', '31', '77', '11', '55', '18', '22']
+18:26:28  INFO        R: collected 973 rows.
+18:26:58  INFO      
+Round 18: Singapore Grand Prix
+18:26:58  INFO        Loading Q session...
+18:26:58  INFO      Loading data for Singapore Grand Prix - Qualifying [v3.8.1]
+18:26:58  INFO      Using cached data for session_info
+18:26:58  INFO      Using cached data for driver_info
+18:26:58  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:26:58  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:26:58  INFO      Using cached data for session_status_data
+18:26:58  INFO      Using cached data for track_status_data
+18:26:58  INFO      Using cached data for _extended_timing_data
+18:26:58  INFO      Using cached data for timing_app_data
+18:26:58  INFO      Processing timing data...
+18:26:59  INFO      Using cached data for weather_data
+18:26:59  INFO      Finished loading data for 20 drivers: ['4', '1', '44', '63', '81', '27', '14', '22', '16', '55', '23', '43', '11', '20', '31', '3', '18', '10', '77', '24']
+18:26:59  INFO        Q: collected 20 rows.
+18:26:59  INFO        Loading R session...
+18:26:59  INFO      Loading data for Singapore Grand Prix - Race [v3.8.1]
+18:26:59  INFO      Using cached data for session_info
+18:26:59  INFO      Using cached data for driver_info
+18:26:59  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:26:59  INFO      Using cached data for session_status_data
+18:26:59  INFO      Using cached data for lap_count
+18:26:59  INFO      Using cached data for track_status_data
+18:26:59  INFO      Using cached data for _extended_timing_data
+18:26:59  INFO      Using cached data for timing_app_data
+18:26:59  INFO      Processing timing data...
+18:27:00  INFO      Using cached data for weather_data
+18:27:00  INFO      Finished loading data for 20 drivers: ['4', '1', '81', '63', '16', '44', '55', '14', '27', '11', '43', '22', '31', '18', '24', '77', '10', '3', '20', '23']
+18:27:00  INFO        R: collected 1177 rows.
+18:27:31  INFO      
+Round 19: United States Grand Prix
+18:27:31  INFO        Loading Q session...
+18:27:31  INFO      Loading data for United States Grand Prix - Qualifying [v3.8.1]
+18:27:31  INFO      Using cached data for session_info
+18:27:31  INFO      Using cached data for driver_info
+18:27:31  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:27:31  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:27:31  INFO      Using cached data for session_status_data
+18:27:31  INFO      Using cached data for track_status_data
+18:27:31  INFO      Using cached data for _extended_timing_data
+18:27:31  INFO      Using cached data for timing_app_data
+18:27:31  INFO      Processing timing data...
+18:27:32  INFO      Using cached data for weather_data
+18:27:32  INFO      Finished loading data for 20 drivers: ['4', '1', '55', '16', '81', '63', '10', '14', '20', '11', '22', '27', '31', '18', '30', '23', '43', '77', '44', '24']
+18:27:32  INFO        Q: collected 20 rows.
+18:27:32  INFO        Loading R session...
+18:27:32  INFO      Loading data for United States Grand Prix - Race [v3.8.1]
+18:27:32  INFO      Using cached data for session_info
+18:27:32  INFO      Using cached data for driver_info
+18:27:32  INFO      Using cached data for session_status_data
+18:27:32  INFO      Using cached data for lap_count
+18:27:32  INFO      Using cached data for track_status_data
+18:27:32  INFO      Using cached data for _extended_timing_data
+18:27:32  INFO      Using cached data for timing_app_data
+18:27:32  INFO      Processing timing data...
+18:27:33  INFO      Using cached data for weather_data
+18:27:33  INFO      Finished loading data for 20 drivers: ['16', '55', '1', '4', '81', '63', '11', '27', '30', '43', '20', '10', '14', '22', '18', '23', '77', '31', '24', '44']
+18:27:33  INFO        R: collected 1059 rows.
+18:28:04  INFO      
+Round 20: Mexico City Grand Prix
+18:28:04  INFO        Loading Q session...
+18:28:04  INFO      Loading data for Mexico City Grand Prix - Qualifying [v3.8.1]
+18:28:04  INFO      Using cached data for session_info
+18:28:04  INFO      Using cached data for driver_info
+18:28:04  INFO      Using cached data for session_status_data
+18:28:04  INFO      Using cached data for track_status_data
+18:28:04  INFO      Using cached data for _extended_timing_data
+18:28:04  INFO      Using cached data for timing_app_data
+18:28:04  INFO      Processing timing data...
+18:28:04  INFO      Using cached data for weather_data
+18:28:05  INFO      Finished loading data for 20 drivers: ['55', '1', '4', '16', '63', '44', '20', '10', '23', '27', '22', '30', '14', '18', '77', '43', '81', '11', '31', '24']
+18:28:05  INFO        Q: collected 20 rows.
+18:28:05  INFO        Loading R session...
+18:28:05  INFO      Loading data for Mexico City Grand Prix - Race [v3.8.1]
+18:28:05  INFO      No cached data found for session_info. Loading data...
+18:28:05  INFO      Fetching session info data...
+18:28:05  INFO      Data has been written to cache!
+18:28:05  INFO      No cached data found for driver_info. Loading data...
+18:28:05  INFO      Fetching driver list...
+18:28:06  INFO      Data has been written to cache!
+18:28:07  INFO      No cached data found for session_status_data. Loading data...
+18:28:07  INFO      Fetching session status data...
+18:28:07  INFO      Data has been written to cache!
+18:28:07  INFO      No cached data found for lap_count. Loading data...
+18:28:07  INFO      Fetching lap count data...
+18:28:08  INFO      Data has been written to cache!
+18:28:08  INFO      No cached data found for track_status_data. Loading data...
+18:28:08  INFO      Fetching track status data...
+18:28:09  INFO      Data has been written to cache!
+18:28:09  INFO      No cached data found for _extended_timing_data. Loading data...
+18:28:09  INFO      Fetching timing data...
+18:28:11  INFO      Parsing timing data...
+18:28:12  INFO      Data has been written to cache!
+18:28:12  INFO      No cached data found for timing_app_data. Loading data...
+18:28:12  INFO      Fetching timing app data...
+18:28:13  INFO      Data has been written to cache!
+18:28:13  INFO      Processing timing data...
+18:28:14  INFO      No cached data found for weather_data. Loading data...
+18:28:14  INFO      Fetching weather data...
+18:28:15  INFO      Data has been written to cache!
+18:28:15  INFO      Finished loading data for 20 drivers: ['55', '4', '16', '44', '63', '1', '20', '81', '27', '10', '18', '43', '31', '77', '24', '30', '11', '14', '23', '22']
+18:28:15  INFO        R: collected 1215 rows.
+18:28:46  INFO      
+Round 21: São Paulo Grand Prix
+18:28:46  INFO        Loading Q session...
+18:28:46  INFO      Loading data for São Paulo Grand Prix - Qualifying [v3.8.1]
+18:28:46  INFO      No cached data found for session_info. Loading data...
+18:28:46  INFO      Fetching session info data...
+18:28:47  INFO      Data has been written to cache!
+18:28:47  INFO      No cached data found for driver_info. Loading data...
+18:28:47  INFO      Fetching driver list...
+18:28:48  INFO      Data has been written to cache!
+18:28:48  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:28:48  INFO      No cached data found for session_status_data. Loading data...
+18:28:48  INFO      Fetching session status data...
+18:28:49  INFO      Data has been written to cache!
+18:28:49  INFO      No cached data found for track_status_data. Loading data...
+18:28:49  INFO      Fetching track status data...
+18:28:50  INFO      Data has been written to cache!
+18:28:50  INFO      No cached data found for _extended_timing_data. Loading data...
+18:28:50  INFO      Fetching timing data...
+18:28:51  INFO      Parsing timing data...
+18:28:52  INFO      Data has been written to cache!
+18:28:52  INFO      No cached data found for timing_app_data. Loading data...
+18:28:52  INFO      Fetching timing app data...
+18:28:52  INFO      Data has been written to cache!
+18:28:52  INFO      Processing timing data...
+18:28:53  WARNING   Fixed incorrect tyre stint information for driver '23'
+18:28:53  WARNING   Fixed incorrect tyre stint information for driver '55'
+18:28:53  INFO      No cached data found for weather_data. Loading data...
+18:28:53  INFO      Fetching weather data...
+18:28:54  INFO      Data has been written to cache!
+18:28:54  INFO      Finished loading data for 20 drivers: ['4', '63', '22', '31', '30', '16', '23', '81', '14', '18', '77', '1', '11', '55', '10', '44', '50', '43', '27', '24']
+18:28:54  INFO        Q: collected 20 rows.
+18:28:54  INFO        Loading R session...
+18:28:54  INFO      Loading data for São Paulo Grand Prix - Race [v3.8.1]
+18:28:54  INFO      No cached data found for session_info. Loading data...
+18:28:54  INFO      Fetching session info data...
+18:28:55  INFO      Data has been written to cache!
+18:28:55  INFO      No cached data found for driver_info. Loading data...
+18:28:55  INFO      Fetching driver list...
+18:28:56  INFO      Data has been written to cache!
+18:28:56  INFO      No cached data found for session_status_data. Loading data...
+18:28:56  INFO      Fetching session status data...
+18:28:57  INFO      Data has been written to cache!
+18:28:57  INFO      No cached data found for lap_count. Loading data...
+18:28:57  INFO      Fetching lap count data...
+18:28:58  INFO      Data has been written to cache!
+18:28:58  INFO      No cached data found for track_status_data. Loading data...
+18:28:58  INFO      Fetching track status data...
+18:28:58  INFO      Data has been written to cache!
+18:28:58  INFO      No cached data found for _extended_timing_data. Loading data...
+18:28:58  INFO      Fetching timing data...
+18:29:01  INFO      Parsing timing data...
+18:29:02  INFO      Data has been written to cache!
+18:29:02  INFO      No cached data found for timing_app_data. Loading data...
+18:29:02  INFO      Fetching timing app data...
+18:29:03  INFO      Data has been written to cache!
+18:29:03  INFO      Processing timing data...
+18:29:04  WARNING   No lap data for driver 23
+18:29:04  WARNING   Failed to perform lap accuracy check - all laps marked as inaccurate (driver 23)
+18:29:05  INFO      No cached data found for weather_data. Loading data...
+18:29:05  INFO      Fetching weather data...
+18:29:05  INFO      Data has been written to cache!
+18:29:06  INFO      Finished loading data for 20 drivers: ['1', '31', '10', '63', '16', '4', '22', '81', '30', '44', '11', '50', '77', '14', '24', '55', '43', '23', '18', '27']
+18:29:06  INFO        R: collected 1135 rows.
+18:29:36  INFO      
+Round 22: Las Vegas Grand Prix
+18:29:36  INFO        Loading Q session...
+18:29:36  INFO      Loading data for Las Vegas Grand Prix - Qualifying [v3.8.1]
+18:29:36  INFO      Using cached data for session_info
+18:29:36  INFO      Using cached data for driver_info
+18:29:36  INFO      Using cached data for session_status_data
+18:29:36  INFO      Using cached data for track_status_data
+18:29:36  INFO      Using cached data for _extended_timing_data
+18:29:36  INFO      Using cached data for timing_app_data
+18:29:36  INFO      Processing timing data...
+18:29:37  INFO      Using cached data for weather_data
+18:29:37  INFO      Finished loading data for 20 drivers: ['63', '55', '10', '16', '1', '4', '22', '81', '27', '44', '31', '20', '24', '43', '30', '11', '14', '23', '77', '18']
+18:29:37  INFO        Q: collected 20 rows.
+18:29:37  INFO        Loading R session...
+18:29:37  INFO      Loading data for Las Vegas Grand Prix - Race [v3.8.1]
+18:29:37  INFO      Using cached data for session_info
+18:29:37  INFO      Using cached data for driver_info
+18:29:37  INFO      Using cached data for session_status_data
+18:29:37  INFO      Using cached data for lap_count
+18:29:37  INFO      Using cached data for track_status_data
+18:29:37  INFO      Using cached data for _extended_timing_data
+18:29:37  INFO      Using cached data for timing_app_data
+18:29:37  INFO      Processing timing data...
+18:29:38  WARNING   Driver 63: Lap timing integrity check failed for 2 lap(s)
+18:29:38  WARNING   Driver 44: Lap timing integrity check failed for 1 lap(s)
+18:29:38  WARNING   Driver 55: Lap timing integrity check failed for 1 lap(s)
+18:29:38  WARNING   Driver 16: Lap timing integrity check failed for 2 lap(s)
+18:29:38  WARNING   Driver  1: Lap timing integrity check failed for 1 lap(s)
+18:29:38  WARNING   Driver  4: Lap timing integrity check failed for 1 lap(s)
+18:29:38  WARNING   Driver 81: Lap timing integrity check failed for 1 lap(s)
+18:29:38  WARNING   Driver 30: Lap timing integrity check failed for 2 lap(s)
+18:29:38  WARNING   Driver 77: Lap timing integrity check failed for 2 lap(s)
+18:29:38  INFO      Using cached data for weather_data
+18:29:38  WARNING   Driver 63 completed the race distance 00:00.427000 before the recorded end of the session.
+18:29:38  INFO      Finished loading data for 20 drivers: ['63', '44', '55', '16', '1', '4', '81', '27', '22', '11', '14', '20', '24', '43', '18', '30', '31', '77', '23', '10']
+18:29:38  INFO        R: collected 938 rows.
+18:30:09  INFO      
+Round 23: Qatar Grand Prix
+18:30:09  INFO        Loading Q session...
+18:30:09  INFO      Loading data for Qatar Grand Prix - Qualifying [v3.8.1]
+18:30:09  INFO      Using cached data for session_info
+18:30:09  INFO      Using cached data for driver_info
+18:30:09  INFO      Using cached data for session_status_data
+18:30:09  INFO      Using cached data for track_status_data
+18:30:09  INFO      Using cached data for _extended_timing_data
+18:30:09  INFO      Using cached data for timing_app_data
+18:30:09  INFO      Processing timing data...
+18:30:10  INFO      Using cached data for weather_data
+18:30:10  INFO      Finished loading data for 20 drivers: ['1', '63', '4', '81', '16', '44', '55', '14', '11', '20', '10', '24', '77', '22', '18', '23', '30', '27', '43', '31']
+18:30:10  INFO        Q: collected 20 rows.
+18:30:10  INFO        Loading R session...
+18:30:10  INFO      Loading data for Qatar Grand Prix - Race [v3.8.1]
+18:30:10  INFO      Using cached data for session_info
+18:30:10  INFO      Using cached data for driver_info
+18:30:10  INFO      Using cached data for session_status_data
+18:30:10  INFO      Using cached data for lap_count
+18:30:10  INFO      Using cached data for track_status_data
+18:30:10  INFO      Using cached data for _extended_timing_data
+18:30:10  INFO      Using cached data for timing_app_data
+18:30:10  INFO      Processing timing data...
+18:30:10  WARNING   Fixed incorrect tyre stint information for driver '43'
+18:30:10  WARNING   Fixed incorrect tyre stint information for driver '31'
+18:30:11  INFO      Using cached data for weather_data
+18:30:11  INFO      Finished loading data for 20 drivers: ['1', '16', '81', '63', '10', '55', '14', '24', '20', '4', '77', '44', '22', '30', '23', '27', '11', '18', '43', '31']
+18:30:11  INFO        R: collected 943 rows.
+18:30:42  INFO      
+Round 24: Abu Dhabi Grand Prix
+18:30:42  INFO        Loading Q session...
+18:30:42  INFO      Loading data for Abu Dhabi Grand Prix - Qualifying [v3.8.1]
+18:30:42  INFO      Using cached data for session_info
+18:30:42  INFO      Using cached data for driver_info
+18:30:42  INFO      Using cached data for session_status_data
+18:30:42  INFO      Using cached data for track_status_data
+18:30:42  INFO      Using cached data for _extended_timing_data
+18:30:42  INFO      Using cached data for timing_app_data
+18:30:42  INFO      Processing timing data...
+18:30:42  INFO      Using cached data for weather_data
+18:30:42  INFO      Finished loading data for 20 drivers: ['4', '81', '55', '27', '1', '10', '63', '14', '77', '11', '22', '30', '18', '16', '20', '23', '24', '44', '43', '61']
+18:30:42  INFO        Q: collected 20 rows.
+18:30:42  INFO        Loading R session...
+18:30:42  INFO      Loading data for Abu Dhabi Grand Prix - Race [v3.8.1]
+18:30:42  INFO      Using cached data for session_info
+18:30:42  INFO      Using cached data for driver_info
+18:30:43  DEBUG     Failed to parse timestamp '' in Ergastresponse.
+18:30:43  INFO      Using cached data for session_status_data
+18:30:43  INFO      Using cached data for lap_count
+18:30:43  INFO      Using cached data for track_status_data
+18:30:43  INFO      Using cached data for _extended_timing_data
+18:30:43  INFO      Using cached data for timing_app_data
+18:30:43  INFO      Processing timing data...
+18:30:44  INFO      Using cached data for weather_data
+18:30:44  INFO      Finished loading data for 20 drivers: ['4', '55', '16', '44', '63', '1', '10', '27', '14', '81', '23', '22', '24', '18', '61', '20', '30', '77', '43', '11']
+18:30:44  INFO        R: collected 1035 rows.
+18:31:14  INFO      
+Final parquet files are up to date (saved incrementally after each event).
+18:31:14  INFO      
+Pipeline complete.
