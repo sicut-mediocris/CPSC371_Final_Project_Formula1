@@ -216,6 +216,29 @@ The script first runs through the pole lap to identify the three hardest braking
 
 ---
 
+## Running Phase 5 — Race Craft
+
+Reads `race_laps_data.parquet` and computes degradation slopes and consistency scores for every driver in every season.
+
+```bash
+python pipeline/racecraft_analysis.py
+python pipeline/racecraft_analysis.py --example-driver HAM   # stint chart for Hamilton
+```
+
+**What you get:**
+- `data/stint_regressions.parquet` — one row per qualifying stint. Key columns: `Slope` (seconds lost per lap on tyre), `R2` (how well the linear fit worked), `Compound`, `Laps`
+- `data/race_craft.parquet` — season-level `RaceCraftScore` (0–100), `DegScore`, `ConScore` per driver
+- `data/degradation_vs_teammate.parquet` — per-race teammate-normalised degradation (`RelativeDeg`, negative = degrades less than teammate)
+- `data/charts/racecraft/racecraft_YYYY.png` — top 10 per season
+- `data/charts/racecraft/degradation_scatter.png` — consistency vs degradation scatter for latest season
+- `data/charts/racecraft/stint_example_DRIVER.png` — lap time progression per stint with regression lines
+
+**How RaceCraftScore works:**
+
+For each stint we fit a linear regression of lap time vs tyre life — the slope is the degradation rate. We take the median slope per driver per season (median to avoid one chaotic race ruining the picture). Consistency is the coefficient of variation of clean lap times per race, averaged across the season. Both are min-max scaled within the season to 0–100, then combined: consistency 60%, degradation 40%.
+
+---
+
 ## Running Phase 6 — Elo Rating & Composite Score
 
 Combines all four signal scores into a SkillScore and runs an Elo system across the full 2018–2024 timeline.
@@ -237,29 +260,6 @@ Weights when all four signals are available (2023 only): qualifying 35%, sector 
 **How Elo works:**
 
 Every driver starts at 1500. For each race weekend we run the qualifying head-to-head vs teammate as a standard chess Elo match (K=32). Beating your teammate gives you points; losing costs points. The amount gained/lost scales with how surprising the result was — beating a much higher-rated teammate earns more than beating a lower-rated one.
-
----
-
-## Running Phase 5 — Race Craft
-
-Reads `race_laps_data.parquet` and computes degradation slopes and consistency scores for every driver in every season.
-
-```bash
-python pipeline/racecraft_analysis.py
-python pipeline/racecraft_analysis.py --example-driver HAM   # stint chart for Hamilton
-```
-
-**What you get:**
-- `data/stint_regressions.parquet` — one row per qualifying stint. Key columns: `Slope` (seconds lost per lap on tyre), `R2` (how well the linear fit worked), `Compound`, `Laps`
-- `data/race_craft.parquet` — season-level `RaceCraftScore` (0–100), `DegScore`, `ConScore` per driver
-- `data/degradation_vs_teammate.parquet` — per-race teammate-normalised degradation (`RelativeDeg`, negative = degrades less than teammate)
-- `data/charts/racecraft/racecraft_YYYY.png` — top 10 per season
-- `data/charts/racecraft/degradation_scatter.png` — consistency vs degradation scatter for latest season
-- `data/charts/racecraft/stint_example_DRIVER.png` — lap time progression per stint with regression lines
-
-**How RaceCraftScore works:**
-
-For each stint we fit a linear regression of lap time vs tyre life — the slope is the degradation rate. We take the median slope per driver per season (median to avoid one chaotic race ruining the picture). Consistency is the coefficient of variation of clean lap times per race, averaged across the season. Both are min-max scaled within the season to 0–100, then combined: consistency 60%, degradation 40%.
 
 ---
 
