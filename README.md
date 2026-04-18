@@ -2,137 +2,171 @@
 
 ![Status](https://img.shields.io/badge/Status-In%20Development-brightgreen) ![Python](https://img.shields.io/badge/Backend-Python%20%7C%20FastF1-yellow) ![Three.js](https://img.shields.io/badge/Frontend-Three.js%20%7C%20Next.js-black)
 
-## What This Project Does
+## What We're Building
 
-This project answers one of F1's most debated questions:
+The core question is: **who are the most skilled F1 drivers, if you take the car out of the equation?**
 
-> **Who are the most skilled drivers, independent of the car they're driving?**
+The obvious problem with comparing F1 drivers is that the car does most of the work. Verstappen wins a lot, but he also had by far the fastest car for two years straight. To actually measure driver skill you need a baseline that removes the car — and the cleanest one available is the teammate comparison. Same car, same weekend, same conditions. Any gap between two teammates is purely the driver.
 
-A driver on a championship-winning team will almost always beat a driver on a backmarker team. That tells us nothing about talent. To actually compare drivers, you need to control for the car — and the cleanest way to do that is to look at teammates: two drivers, same car, same conditions, same weekend. Any gap between them is purely the driver.
-
-This system collects seven years of FastF1 telemetry data (2018–2024), extracts six skill signals that are car-independent, and combines them into a season-by-season driver rating. The results are served through a scroll-driven 3D web interface.
+We collect seven years of FastF1 data (2018–2024), extract several skill signals that are car-independent, and eventually combine them into a single driver rating. The plan is to surface the results through a scroll-driven 3D frontend, but the data pipeline is the foundation of everything.
 
 ---
 
-## Project Status
+## Current Status
 
-| Phase | Description | Status |
+| Phase | What it does | Status |
 |---|---|---|
-| 1 | Multi-season data collection pipeline | ✅ Complete |
-| 2 | Teammate qualifying gap analysis & ratings | ✅ Complete |
-| 3 | Sector specialization profile (S1/S2/S3) | Planned |
-| 4 | Telemetry skill signals (brake points, corner speed) | Planned |
-| 5 | Tire degradation & race craft score | Planned |
-| 6 | Elo-style composite driver rating | Planned |
-| 7 | FastAPI backend | Planned |
-| 8 | Next.js + Three Fiber frontend foundation | Planned |
-| 9 | Scroll-driven 3D circuit experience | Planned |
-| 10 | Data visualization overlays (Recharts, radar charts) | Planned |
+| 1 | Pull all qualifying + race data from FastF1 API (2018–2024) | Done |
+| 2 | Teammate qualifying gap analysis — who consistently beats their partner | Done |
+| 3 | Sector specialization — which drivers are strong in S1 vs S2 vs S3 | Done |
+| 4 | Telemetry signals — brake points, corner speed, throttle application | Up next |
+| 5 | Tire degradation & race craft score | Pending |
+| 6 | Elo-style composite rating across all signals | Pending |
+| 7 | FastAPI backend to serve the data | Pending |
+| 8 | Next.js + React Three Fiber frontend | Pending |
+| 9 | Scroll-driven 3D circuit experience | Pending |
+| 10 | Recharts data viz overlays (radar, speed traces, Elo trajectory) | Pending |
+
+For a summary of what the completed phases actually found, see **[RESULTS.md](RESULTS.md)**.
 
 ---
 
-## Repository Layout
+## Repo Layout
 
 ```
 Formula1/
 ├── pipeline/
-│   ├── collect_data.py          # Phase 1 — download & cache all session data
-│   └── qualifying_analysis.py  # Phase 2 — teammate gap analysis & ratings
+│   ├── collect_data.py          # Phase 1 — downloads and caches all session data
+│   ├── qualifying_analysis.py   # Phase 2 — teammate gap analysis and QualiRating
+│   ├── sector_analysis.py       # Phase 3 — sector score profiles and radar charts
+│   └── generate_summary.py      # Reads all parquet outputs and writes RESULTS.md
 │
 ├── data/
-│   ├── cache/                   # FastF1 raw session cache (auto-managed, not in git)
-│   ├── qualifying_data.parquet  # Phase 1 output — one row per driver per race weekend
-│   ├── race_laps_data.parquet   # Phase 1 output — one row per lap per driver
-│   ├── teammate_gaps.parquet    # Phase 2 output — per-weekend teammate deltas
-│   ├── qualifying_ratings.parquet  # Phase 2 output — season-level ratings (0–100)
-│   ├── charts/                  # Generated PNG charts
-│   │   ├── quali_rating_2018.png ... quali_rating_2024.png
-│   │   └── quali_rating_heatmap.png
-│   └── pipeline.log             # Execution log
+│   ├── qualifying_data.parquet      # Phase 1: one row per driver per race weekend
+│   ├── race_laps_data.parquet       # Phase 1: one row per lap per driver (162k rows)
+│   ├── teammate_gaps.parquet        # Phase 2: per-weekend teammate deltas
+│   ├── qualifying_ratings.parquet   # Phase 2: season-level QualiRating per driver
+│   ├── sector_weekend.parquet       # Phase 3: sector scores per driver per weekend
+│   ├── sector_profiles.parquet      # Phase 3: median sector scores per driver per season
+│   ├── charts/
+│   │   ├── quali_rating_2018.png    # top 10 qualifying ratings, per year
+│   │   ├── ...
+│   │   ├── quali_rating_2024.png
+│   │   ├── quali_rating_heatmap.png # all seasons side by side for top 20 drivers
+│   │   └── sectors/
+│   │       ├── radar_VER.png        # spider chart — Verstappen's S1/S2/S3 fingerprint
+│   │       ├── radar_HAM.png
+│   │       ├── ...
+│   │       └── sector_heatmap.png   # top 20 drivers x 3 sectors for latest season
+│   └── pipeline.log                 # timestamped log of every session loaded
 │
-├── explore.ipynb                # FastF1 walkthrough and dataset exploration
-├── first.ipynb                  # Early scratch notebook
-└── CLAUDE.md                    # Detailed phase-by-phase implementation spec
+├── RESULTS.md                   # Plain-English summary of findings so far
+├── explore.ipynb                # Early FastF1 exploration notebook
+└── CLAUDE.md                    # Full phase-by-phase implementation spec
 ```
 
 ---
 
 ## Setup
 
-**Requirements:** Python 3.11+
+Python 3.11+. Install dependencies:
 
 ```bash
 pip install fastf1 pandas pyarrow matplotlib numpy
 ```
 
-FastF1 caches API responses locally so sessions only download once. The cache lives in `data/cache/` and is excluded from git (it's ~several GB for all 7 seasons).
+FastF1 caches every session locally after the first download, so the API only gets hit once per session. The cache folder (`data/cache/`) is excluded from git — it's a few GB across all 7 seasons so you don't want it versioned. When you run the pipeline for the first time it'll be slow; after that it's instant.
 
 ---
 
-## Running the Pipeline
+## Running Things
 
-### Phase 1 — Collect Data
+### Phase 1 — Collect the raw data
 
-Downloads qualifying and race session data for 2018–2024 from the FastF1 API and saves two Parquet files.
+This downloads qualifying results and race lap data for every Grand Prix from 2018 to 2024.
 
 ```bash
-cd pipeline
-python collect_data.py
+python pipeline/collect_data.py
 ```
 
-Options:
+It saves after every race weekend, so if it crashes or you kill it you won't lose progress. Run it again and it picks up where it left off (existing rows get deduplicated).
+
 ```bash
-python collect_data.py --seasons 2023 2024   # specific seasons only
-python collect_data.py --dry-run             # list all events without fetching
+python pipeline/collect_data.py --seasons 2023 2024   # only pull specific years
+python pipeline/collect_data.py --dry-run             # just list events, don't fetch anything
 ```
 
-The script saves progress after every race weekend, so it's safe to interrupt and resume. Already-cached sessions load instantly without hitting the API.
-
-**Output files:**
-- `data/qualifying_data.parquet` — one row per driver per race weekend. Columns: `Year`, `Round`, `CircuitName`, `Abbreviation`, `FullName`, `TeamName`, `Position`, `Q1_s`, `Q2_s`, `Q3_s`, `BestQualiTime_s`, weather averages.
-- `data/race_laps_data.parquet` — one row per lap per driver. Columns: `Driver`, `Team`, `LapNumber`, `Stint`, `LapTime_s`, `Sector1Time_s`, `Sector2Time_s`, `Sector3Time_s`, `Compound`, `TyreLife`, `GridPosition`, `FinishPosition`, weather averages.
+**What you get:**
+- `data/qualifying_data.parquet` — Q1/Q2/Q3 times, grid position, team, weather per driver per weekend
+- `data/race_laps_data.parquet` — every lap for every driver: sector times, tyre compound, tyre life, speed traps, grid/finish positions
 
 ---
 
-### Phase 2 — Qualifying Analysis
+### Phase 2 — Qualifying gap analysis
 
-Reads `qualifying_data.parquet` and computes teammate gap ratings for every season.
+Pairs teammates for each weekend, computes the gap between them, and rolls it up into a season rating.
 
 ```bash
-cd pipeline
-python qualifying_analysis.py
+python pipeline/qualifying_analysis.py
 ```
 
-**Output files:**
-- `data/teammate_gaps.parquet` — one row per driver per race weekend. Key columns: `GapToTeammate_s` (seconds, negative = faster), `GapPct` (% delta), `BeatsTeammate` (boolean).
-- `data/qualifying_ratings.parquet` — one row per driver per season. Key columns: `QualiRating` (0–100), `WinRate` (% of weekends faster than teammate), `AvgGapToTeammate_s`.
+**What you get:**
+- `data/teammate_gaps.parquet` — the raw gap data. `GapToTeammate_s` is negative if the driver was faster, `GapPct` is the % margin, `BeatsTeammate` is a boolean
+- `data/qualifying_ratings.parquet` — one row per driver per season with `QualiRating` (0–100), `WinRate`, and `AvgGapToTeammate_s`
+- `data/charts/quali_rating_YYYY.png` — top 10 for each season, colored by team
+- `data/charts/quali_rating_heatmap.png` — overview heatmap across all 7 seasons
 
-**Charts saved to `data/charts/`:**
-- `quali_rating_YYYY.png` — horizontal bar chart of top 10 rated drivers for that season, colored by team.
-- `quali_rating_heatmap.png` — grid of top 20 drivers × 7 seasons, showing rating consistency over time. Green = consistently outqualified their teammate.
+**How the rating works:**
 
-**How the QualiRating is calculated:**
-
-The rating combines two signals:
-- **Win rate (60%)** — what fraction of weekends did the driver outqualify their teammate? Robust to outlier laps.
-- **Gap score (40%)** — how large was the average margin? Min-max scaled within the season so it's relative to that year's grid.
-
-Both components are normalised per season so a 2018 rating of 80 means "top performer relative to the 2018 grid", not an absolute benchmark.
-
-Drivers with fewer than 3 teammate comparisons in a season are excluded (too small a sample).
+The score is 60% win rate (what % of weekends did this driver outqualify their teammate) plus 40% gap score (how large was the margin). Both are min-max scaled within the season so you're always comparing relative to that year's grid, not some absolute number. Drivers with fewer than 3 comparisons in a season get dropped — not enough data.
 
 ---
 
-## Skill Signals (What Gets Measured)
+### Phase 3 — Sector specialization
 
-| Signal | Source | Why It's Car-Independent |
-|---|---|---|
-| Qualifying gap to teammate | `qualifying_data.parquet` | Same car, same weekend |
-| Sector delta (S1/S2/S3) | `race_laps_data.parquet` | Normalised within team |
-| Brake point per corner | Telemetry (Phase 4) | Driver decision, not car setup |
-| Minimum corner speed | Telemetry (Phase 4) | Car control under lateral load |
-| Throttle application point | Telemetry (Phase 4) | Confidence and feel |
-| Tire degradation rate | Race stint regression (Phase 5) | Relative to same-car teammate |
+Looks at where on track each driver is fast. S1 is typically high-speed, S2 mixed, S3 more technical. Some drivers are genuinely stronger in one type of corner — this makes that visible.
+
+```bash
+python pipeline/sector_analysis.py
+```
+
+By default generates radar charts for the top 15 drivers. To get specific drivers:
+
+```bash
+python pipeline/sector_analysis.py --drivers VER HAM LEC NOR ALO
+```
+
+**What you get:**
+- `data/sector_weekend.parquet` — normalized sector scores per driver per race weekend (1.0 = fastest in session, 0.0 = slowest)
+- `data/sector_profiles.parquet` — median sector scores per driver per season, plus a bias flag for specialists
+- `data/charts/sectors/radar_DRIVER.png` — spider chart showing a driver's sector fingerprint across each season they raced
+- `data/charts/sectors/sector_heatmap.png` — top 20 drivers for the most recent season, all three sectors at once
+
+**How normalization works:**
+
+For each race weekend we take each driver's best clean, green-flag lap (no safety car, not a pit lap, IsAccurate=True). Within that session, each sector time gets scaled 0–1 so circuit differences don't matter — a 0.9 in S1 at Monza and a 0.9 in S1 at Monaco both mean "near the top of the field in that sector." Season profiles use the median across all weekends.
+
+---
+
+### Regenerate the results summary
+
+After running any phase, you can refresh RESULTS.md with the latest findings:
+
+```bash
+python pipeline/generate_summary.py
+```
+
+---
+
+## What the Data Shows So Far
+
+Quick highlights — full write-up in [RESULTS.md](RESULTS.md).
+
+- George Russell had a **100% win rate against his Williams teammate in 2019** — outqualified Robert Kubica at every single race. A clear indicator of raw talent before he had a competitive car.
+- Verstappen's biggest gap was at the 2023 Austrian GP where he was **0.97% faster than Perez in the same car** — a huge margin at that level.
+- Hamilton's sector scores show a consistent **decline from 2018 to 2024**, particularly in S2. His 2020 season was his strongest, with near-perfect scores in S3 (technical corners).
+- Verstappen's **2023 S2 score was 0.994** — essentially at the ceiling of what the entire field produced that season in the mixed sector.
+- Norris had the **highest single-season qualifying rating** in the dataset (90.0 in 2024).
 
 ---
 
@@ -140,11 +174,11 @@ Drivers with fewer than 3 teammate comparisons in a season are excluded (too sma
 
 | Layer | Tools |
 |---|---|
-| Data collection | FastF1, Pandas, PyArrow |
+| Data | FastF1, Pandas, NumPy, PyArrow |
 | ML / ratings | XGBoost, LightGBM, scikit-learn, SciPy |
 | Backend (planned) | FastAPI, Uvicorn |
 | Frontend (planned) | Next.js, React Three Fiber, GSAP, Recharts, Tailwind CSS |
 
 ---
 
-*CPSC 371 Project — F1 Driver Skill Decomposition Engine.*
+*CPSC 371 — F1 Driver Skill Decomposition Engine*
