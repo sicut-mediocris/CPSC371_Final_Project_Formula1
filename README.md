@@ -1,6 +1,6 @@
 # F1 Driver Skill Decomposition Engine
 
-![Status](https://img.shields.io/badge/Status-In%20Development-brightgreen) ![Python](https://img.shields.io/badge/Backend-Python%20%7C%20FastF1-yellow) ![Three.js](https://img.shields.io/badge/Frontend-Three.js%20%7C%20Next.js-black)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen) ![Python](https://img.shields.io/badge/Pipeline-Python%20%7C%20FastF1-yellow)
 
 ## What We're Building
 
@@ -8,7 +8,7 @@ The core question is: **who are the most skilled F1 drivers, if you take the car
 
 The obvious problem with comparing F1 drivers is that the car does most of the work. Verstappen wins a lot, but he also had by far the fastest car for two years straight. To actually measure driver skill you need a baseline that removes the car — and the cleanest one available is the teammate comparison. Same car, same weekend, same conditions. Any gap between two teammates is purely the driver.
 
-We collect seven years of FastF1 data (2018–2024), extract several skill signals that are car-independent, and eventually combine them into a single driver rating. The plan is to surface the results through a scroll-driven 3D frontend, but the data pipeline is the foundation of everything.
+We collect seven years of FastF1 data (2018–2024), extract several skill signals that are car-independent, and combine them into a single driver rating. The findings are documented in [RESULTS.md](RESULTS.md).
 
 ---
 
@@ -22,10 +22,6 @@ We collect seven years of FastF1 data (2018–2024), extract several skill signa
 | 4 | Telemetry signals — brake points, corner speed, throttle application | Done |
 | 5 | Tire degradation & race craft score | Done |
 | 6 | Elo-style composite rating across all signals | Done |
-| 7 | FastAPI backend to serve the data | Pending |
-| 8 | Next.js + React Three Fiber frontend | Pending |
-| 9 | Scroll-driven 3D circuit experience | Pending |
-| 10 | Recharts data viz overlays (radar, speed traces, Elo trajectory) | Pending |
 
 For a summary of what the completed phases actually found, see **[RESULTS.md](RESULTS.md)**.
 
@@ -274,9 +270,8 @@ Every driver starts at 1500. For each race weekend we run the qualifying head-to
 | Layer | Tools |
 |---|---|
 | Data | FastF1, Pandas, NumPy, PyArrow |
-| ML / ratings | XGBoost, LightGBM, scikit-learn, SciPy |
-| Backend (planned) | FastAPI, Uvicorn |
-| Frontend (planned) | Next.js, React Three Fiber, GSAP, Recharts, Tailwind CSS |
+| ML / ratings | scikit-learn, SciPy |
+| Visualisation | Matplotlib |
 
 ---
 
