@@ -20,7 +20,7 @@ We collect seven years of FastF1 data (2018–2024), extract several skill signa
 | 2 | Teammate qualifying gap analysis — who consistently beats their partner | Done |
 | 3 | Sector specialization — which drivers are strong in S1 vs S2 vs S3 | Done |
 | 4 | Telemetry signals — brake points, corner speed, throttle application | Done |
-| 5 | Tire degradation & race craft score | Pending |
+| 5 | Tire degradation & race craft score | Done |
 | 6 | Elo-style composite rating across all signals | Pending |
 | 7 | FastAPI backend to serve the data | Pending |
 | 8 | Next.js + React Three Fiber frontend | Pending |
@@ -40,6 +40,7 @@ Formula1/
 │   ├── qualifying_analysis.py   # Phase 2 — teammate gap analysis and QualiRating
 │   ├── sector_analysis.py       # Phase 3 — sector score profiles and radar charts
 │   ├── telemetry_analysis.py    # Phase 4 — brake points, corner speed, throttle signals
+│   ├── racecraft_analysis.py    # Phase 5 — tyre degradation regression & RaceCraftScore
 │   └── generate_summary.py      # Reads all parquet outputs and writes RESULTS.md
 │
 ├── data/
@@ -49,7 +50,10 @@ Formula1/
 │   ├── qualifying_ratings.parquet   # Phase 2: season-level QualiRating per driver
 │   ├── sector_weekend.parquet       # Phase 3: sector scores per driver per weekend
 │   ├── sector_profiles.parquet      # Phase 3: median sector scores per driver per season
-│   ├── telemetry_signals.parquet    # Phase 4: brake/speed/throttle signals per driver per corner
+│   ├── telemetry_signals.parquet        # Phase 4: brake/speed/throttle signals per driver per corner
+│   ├── stint_regressions.parquet        # Phase 5: per-stint slope, r², lap count
+│   ├── race_craft.parquet               # Phase 5: season-level RaceCraftScore per driver
+│   ├── degradation_vs_teammate.parquet  # Phase 5: degradation normalised vs teammate
 │   ├── charts/
 │   │   ├── quali_rating_2018.png    # top 10 qualifying ratings, per year
 │   │   ├── ...
@@ -176,6 +180,8 @@ Quick highlights — full write-up in [RESULTS.md](RESULTS.md).
 - Norris had the **highest single-season qualifying rating** in the dataset (90.0 in 2024).
 - Across Monza, Hungary, and Monaco (2023), **Leclerc braked the latest** into corners (+0.88 std from field mean) and also carried the **highest minimum corner speed** (+0.69 std). A consistent pattern across three very different circuit types.
 - **Verstappen was second in corner speed** (+0.67 std) despite braking earlier than Leclerc — suggests he's carrying more mechanical grip rather than relying on late braking.
+- Hamilton topped the **consistency score in 2018 and 2019**, putting in the most uniform lap times of anyone in the field.
+- Piastri degrades tyres less than Norris on average — interesting given Norris outqualifies him. Raw pace vs tyre management are different skills.
 
 ---
 
@@ -202,6 +208,29 @@ python pipeline/telemetry_analysis.py --compare HAM RUS   # speed trace overlay
 **How braking zone detection works:**
 
 The script first runs through the pole lap to identify the three hardest braking zones on the circuit (ranked by entry speed). Then every driver gets measured at those same zones. For each zone we find where that driver's own brakes first went on (in a 150m search window around the reference point), which is the brake point. Min corner speed and throttle application come from the telemetry in the 200m window past the end of braking.
+
+---
+
+## Running Phase 5 — Race Craft
+
+Reads `race_laps_data.parquet` and computes degradation slopes and consistency scores for every driver in every season.
+
+```bash
+python pipeline/racecraft_analysis.py
+python pipeline/racecraft_analysis.py --example-driver HAM   # stint chart for Hamilton
+```
+
+**What you get:**
+- `data/stint_regressions.parquet` — one row per qualifying stint. Key columns: `Slope` (seconds lost per lap on tyre), `R2` (how well the linear fit worked), `Compound`, `Laps`
+- `data/race_craft.parquet` — season-level `RaceCraftScore` (0–100), `DegScore`, `ConScore` per driver
+- `data/degradation_vs_teammate.parquet` — per-race teammate-normalised degradation (`RelativeDeg`, negative = degrades less than teammate)
+- `data/charts/racecraft/racecraft_YYYY.png` — top 10 per season
+- `data/charts/racecraft/degradation_scatter.png` — consistency vs degradation scatter for latest season
+- `data/charts/racecraft/stint_example_DRIVER.png` — lap time progression per stint with regression lines
+
+**How RaceCraftScore works:**
+
+For each stint we fit a linear regression of lap time vs tyre life — the slope is the degradation rate. We take the median slope per driver per season (median to avoid one chaotic race ruining the picture). Consistency is the coefficient of variation of clean lap times per race, averaged across the season. Both are min-max scaled within the season to 0–100, then combined: consistency 60%, degradation 40%.
 
 ---
 
