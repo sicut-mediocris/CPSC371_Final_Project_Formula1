@@ -21,7 +21,7 @@ We collect seven years of FastF1 data (2018–2024), extract several skill signa
 | 3 | Sector specialization — which drivers are strong in S1 vs S2 vs S3 | Done |
 | 4 | Telemetry signals — brake points, corner speed, throttle application | Done |
 | 5 | Tire degradation & race craft score | Done |
-| 6 | Elo-style composite rating across all signals | Pending |
+| 6 | Elo-style composite rating across all signals | Done |
 | 7 | FastAPI backend to serve the data | Pending |
 | 8 | Next.js + React Three Fiber frontend | Pending |
 | 9 | Scroll-driven 3D circuit experience | Pending |
@@ -41,6 +41,7 @@ Formula1/
 │   ├── sector_analysis.py       # Phase 3 — sector score profiles and radar charts
 │   ├── telemetry_analysis.py    # Phase 4 — brake points, corner speed, throttle signals
 │   ├── racecraft_analysis.py    # Phase 5 — tyre degradation regression & RaceCraftScore
+│   ├── elo_rating.py            # Phase 6 — composite SkillScore & Elo trajectory
 │   └── generate_summary.py      # Reads all parquet outputs and writes RESULTS.md
 │
 ├── data/
@@ -54,6 +55,8 @@ Formula1/
 │   ├── stint_regressions.parquet        # Phase 5: per-stint slope, r², lap count
 │   ├── race_craft.parquet               # Phase 5: season-level RaceCraftScore per driver
 │   ├── degradation_vs_teammate.parquet  # Phase 5: degradation normalised vs teammate
+│   ├── skill_scores.parquet             # Phase 6: composite SkillScore per driver per season
+│   └── elo_history.parquet             # Phase 6: Elo rating after every race weekend
 │   ├── charts/
 │   │   ├── quali_rating_2018.png    # top 10 qualifying ratings, per year
 │   │   ├── ...
@@ -182,6 +185,8 @@ Quick highlights — full write-up in [RESULTS.md](RESULTS.md).
 - **Verstappen was second in corner speed** (+0.67 std) despite braking earlier than Leclerc — suggests he's carrying more mechanical grip rather than relying on late braking.
 - Hamilton topped the **consistency score in 2018 and 2019**, putting in the most uniform lap times of anyone in the field.
 - Piastri degrades tyres less than Norris on average — interesting given Norris outqualifies him. Raw pace vs tyre management are different skills.
+- **Verstappen has the highest final Elo (1900)** accumulated across 2018–2024 from consistently outqualifying teammates. Russell (1798) and Norris (1729) are second and third — both built their ratings against strong teammates.
+- In the **composite SkillScore, Leclerc tops 2023** (81.0) combining strong qualifying, sector scores, and race craft. Norris leads 2024 (81.7) driven by his 90.0 qualifying rating.
 
 ---
 
@@ -208,6 +213,30 @@ python pipeline/telemetry_analysis.py --compare HAM RUS   # speed trace overlay
 **How braking zone detection works:**
 
 The script first runs through the pole lap to identify the three hardest braking zones on the circuit (ranked by entry speed). Then every driver gets measured at those same zones. For each zone we find where that driver's own brakes first went on (in a 150m search window around the reference point), which is the brake point. Min corner speed and throttle application come from the telemetry in the 200m window past the end of braking.
+
+---
+
+## Running Phase 6 — Elo Rating & Composite Score
+
+Combines all four signal scores into a SkillScore and runs an Elo system across the full 2018–2024 timeline.
+
+```bash
+python pipeline/elo_rating.py
+```
+
+**What you get:**
+- `data/skill_scores.parquet` — composite SkillScore (0–100) per driver per season, plus the individual signal components
+- `data/elo_history.parquet` — Elo rating after every race weekend for every driver
+- `data/charts/elo/elo_trajectory.png` — Elo over time for the top 10 drivers across 2018–2024
+- `data/charts/elo/skill_score_YYYY.png` — composite score bar chart per season
+
+**How SkillScore works:**
+
+Weights when all four signals are available (2023 only): qualifying 35%, sector 20%, telemetry 25%, racecraft 20%. For seasons without telemetry the 25% is redistributed proportionally across the other three. All signals are already on a 0–100 scale from their respective phases.
+
+**How Elo works:**
+
+Every driver starts at 1500. For each race weekend we run the qualifying head-to-head vs teammate as a standard chess Elo match (K=32). Beating your teammate gives you points; losing costs points. The amount gained/lost scales with how surprising the result was — beating a much higher-rated teammate earns more than beating a lower-rated one.
 
 ---
 
