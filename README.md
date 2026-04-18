@@ -19,7 +19,7 @@ We collect seven years of FastF1 data (2018–2024), extract several skill signa
 | 1 | Pull all qualifying + race data from FastF1 API (2018–2024) | Done |
 | 2 | Teammate qualifying gap analysis — who consistently beats their partner | Done |
 | 3 | Sector specialization — which drivers are strong in S1 vs S2 vs S3 | Done |
-| 4 | Telemetry signals — brake points, corner speed, throttle application | Up next |
+| 4 | Telemetry signals — brake points, corner speed, throttle application | Done |
 | 5 | Tire degradation & race craft score | Pending |
 | 6 | Elo-style composite rating across all signals | Pending |
 | 7 | FastAPI backend to serve the data | Pending |
@@ -39,6 +39,7 @@ Formula1/
 │   ├── collect_data.py          # Phase 1 — downloads and caches all session data
 │   ├── qualifying_analysis.py   # Phase 2 — teammate gap analysis and QualiRating
 │   ├── sector_analysis.py       # Phase 3 — sector score profiles and radar charts
+│   ├── telemetry_analysis.py    # Phase 4 — brake points, corner speed, throttle signals
 │   └── generate_summary.py      # Reads all parquet outputs and writes RESULTS.md
 │
 ├── data/
@@ -48,16 +49,22 @@ Formula1/
 │   ├── qualifying_ratings.parquet   # Phase 2: season-level QualiRating per driver
 │   ├── sector_weekend.parquet       # Phase 3: sector scores per driver per weekend
 │   ├── sector_profiles.parquet      # Phase 3: median sector scores per driver per season
+│   ├── telemetry_signals.parquet    # Phase 4: brake/speed/throttle signals per driver per corner
 │   ├── charts/
 │   │   ├── quali_rating_2018.png    # top 10 qualifying ratings, per year
 │   │   ├── ...
 │   │   ├── quali_rating_2024.png
 │   │   ├── quali_rating_heatmap.png # all seasons side by side for top 20 drivers
-│   │   └── sectors/
-│   │       ├── radar_VER.png        # spider chart — Verstappen's S1/S2/S3 fingerprint
-│   │       ├── radar_HAM.png
-│   │       ├── ...
-│   │       └── sector_heatmap.png   # top 20 drivers x 3 sectors for latest season
+│   │   ├── sectors/
+│   │   │   ├── radar_VER.png        # spider chart — Verstappen's S1/S2/S3 fingerprint
+│   │   │   ├── radar_HAM.png
+│   │   │   ├── ...
+│   │   │   └── sector_heatmap.png   # top 20 drivers x 3 sectors for latest season
+│   │   └── telemetry/
+│   │       ├── braking_italian_grand_prix.png   # brake point comparison at Monza
+│   │       ├── braking_hungarian_grand_prix.png
+│   │       ├── braking_monaco_grand_prix.png
+│   │       └── speed_VER_vs_PER_*.png           # head-to-head speed traces
 │   └── pipeline.log                 # timestamped log of every session loaded
 │
 ├── RESULTS.md                   # Plain-English summary of findings so far
@@ -167,6 +174,34 @@ Quick highlights — full write-up in [RESULTS.md](RESULTS.md).
 - Hamilton's sector scores show a consistent **decline from 2018 to 2024**, particularly in S2. His 2020 season was his strongest, with near-perfect scores in S3 (technical corners).
 - Verstappen's **2023 S2 score was 0.994** — essentially at the ceiling of what the entire field produced that season in the mixed sector.
 - Norris had the **highest single-season qualifying rating** in the dataset (90.0 in 2024).
+- Across Monza, Hungary, and Monaco (2023), **Leclerc braked the latest** into corners (+0.88 std from field mean) and also carried the **highest minimum corner speed** (+0.69 std). A consistent pattern across three very different circuit types.
+- **Verstappen was second in corner speed** (+0.67 std) despite braking earlier than Leclerc — suggests he's carrying more mechanical grip rather than relying on late braking.
+
+---
+
+## Running Phase 4 — Telemetry Signals
+
+Loads qualifying lap telemetry for three representative circuits and extracts per-corner brake points, corner speeds, and throttle application distances.
+
+```bash
+python pipeline/telemetry_analysis.py
+```
+
+By default uses 2023. To use a different season or generate a specific head-to-head speed trace:
+
+```bash
+python pipeline/telemetry_analysis.py --year 2022
+python pipeline/telemetry_analysis.py --compare HAM RUS   # speed trace overlay
+```
+
+**What you get:**
+- `data/telemetry_signals.parquet` — one row per driver per corner per circuit (180 rows for 2023). Key columns: `brake_point_m`, `min_speed_kmh`, `throttle_point_m`, and their `_norm` versions (z-scores vs field).
+- `data/charts/telemetry/braking_CIRCUIT.png` — bar chart of brake points vs field mean, one per circuit
+- `data/charts/telemetry/speed_A_vs_B_CIRCUIT.png` — overlaid speed traces with delta shading
+
+**How braking zone detection works:**
+
+The script first runs through the pole lap to identify the three hardest braking zones on the circuit (ranked by entry speed). Then every driver gets measured at those same zones. For each zone we find where that driver's own brakes first went on (in a 150m search window around the reference point), which is the brake point. Min corner speed and throttle application come from the telemetry in the 200m window past the end of braking.
 
 ---
 
