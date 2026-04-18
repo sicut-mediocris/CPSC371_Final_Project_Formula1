@@ -214,6 +214,8 @@ python pipeline/telemetry_analysis.py --compare HAM RUS   # speed trace overlay
 
 The script first runs through the pole lap to identify the three hardest braking zones on the circuit (ranked by entry speed). Then every driver gets measured at those same zones. For each zone we find where that driver's own brakes first went on (in a 150m search window around the reference point), which is the brake point. Min corner speed and throttle application come from the telemetry in the 200m window past the end of braking.
 
+**What it found (2023):** Leclerc braked latest across all three circuits (+0.88 std above field mean) and carried the highest minimum corner speed (+0.69 std) — a consistent pattern whether the circuit was Monza, Budapest, or Monaco. Verstappen was the opposite: earlier on the brakes (-0.22 std) but second in corner speed (+0.67 std), suggesting he generates grip mechanically rather than coasting in on a late braking point. Pérez showed the weakest corner speed in the Red Bull garage, which aligns with his qualifying deficits from Phase 2.
+
 ---
 
 ## Running Phase 5 — Race Craft
@@ -236,6 +238,8 @@ python pipeline/racecraft_analysis.py --example-driver HAM   # stint chart for H
 **How RaceCraftScore works:**
 
 For each stint we fit a linear regression of lap time vs tyre life — the slope is the degradation rate. We take the median slope per driver per season (median to avoid one chaotic race ruining the picture). Consistency is the coefficient of variation of clean lap times per race, averaged across the season. Both are min-max scaled within the season to 0–100, then combined: consistency 60%, degradation 40%.
+
+**What it found:** Hamilton topped the consistency score in 2018, matching his peak across every other signal that year. Russell posted an 86.7 race craft score at Williams in 2021 — remarkable given how difficult that car was to drive consistently. De Vries scored 93.9 in 2023 (highest pre-2024) across just 10 races before being dropped, almost entirely on tyre management. On the Norris vs Piastri question: Norris outqualifies Piastri clearly (Phase 2), but Piastri degrades tyres less than Norris in the majority of their shared races — they're strong on different parts of the weekend.
 
 ---
 
@@ -260,6 +264,8 @@ Weights when all four signals are available (2023 only): qualifying 35%, sector 
 **How Elo works:**
 
 Every driver starts at 1500. For each race weekend we run the qualifying head-to-head vs teammate as a standard chess Elo match (K=32). Beating your teammate gives you points; losing costs points. The amount gained/lost scales with how surprising the result was — beating a much higher-rated teammate earns more than beating a lower-rated one.
+
+**What it found:** Verstappen ends at 1900 Elo — 102 points clear of Russell in second. Russell at 1798 is the more interesting story: he built that rating across Williams, then Mercedes, consistently winning the intra-team comparison regardless of the car. Norris at 1729 is third despite fewer seasons, with his rating accelerating in 2023–2024 once Piastri became his benchmark. On the composite SkillScore, Leclerc tops 2023 at 81.0 — the only season with telemetry included, where his brake-point and corner-speed numbers were the best in the field. Norris leads 2024 at 81.7, almost entirely driven by his 90.0 qualifying rating.
 
 ---
 
