@@ -1,10 +1,14 @@
 # F1 Driver Skill Decomposition Engine
 
 Team : Unsupervised Men
+
 Sukirat Singh Dhillon, 230155722
+
 Akshay ArulKrishnan , 230158634
+
 Karsten Keiji Qi-Zhi Ngai-Natsuhara,230165205
-Amaan Hingora,  230156282
+
+Amaan Hingora, 230156282
 
 ## What We're Building
 
