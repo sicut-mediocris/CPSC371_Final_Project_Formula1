@@ -1,4 +1,11 @@
 """
+
+Team : Unsupervised Men
+Sukirat Singh Dhillon, 230155722
+Akshay ArulKrishnan , 230158634
+Karsten Keiji Qi-Zhi Ngai-Natsuhara,230165205
+Amaan Hingora, 230156282
+
 Phase 1: Multi-Season Data Collection Pipeline
 ===============================================
 Collects Qualifying and Race session data for every Grand Prix from 2018-2024

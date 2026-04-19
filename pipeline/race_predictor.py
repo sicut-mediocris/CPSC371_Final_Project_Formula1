@@ -1,4 +1,11 @@
 """
+
+Team : Unsupervised Men
+Sukirat Singh Dhillon, 230155722
+Akshay ArulKrishnan , 230158634
+Karsten Keiji Qi-Zhi Ngai-Natsuhara,230165205
+Amaan Hingora, 230156282
+
 Phase 7: Supervised ML — Race Finishing Position Predictor
 ===========================================================
 Uses the skill signals from Phases 2-6 as features to predict where each

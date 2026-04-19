@@ -1,4 +1,11 @@
 """
+
+Team : Unsupervised Men
+Sukirat Singh Dhillon, 230155722
+Akshay ArulKrishnan , 230158634
+Karsten Keiji Qi-Zhi Ngai-Natsuhara,230165205
+Amaan Hingora, 230156282
+
 Phase 6: Composite SkillScore & Elo Driver Rating
 ===================================================
 Combines the four skill signals from Phases 2-5 into a unified driver rating,

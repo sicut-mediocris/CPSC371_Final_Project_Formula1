@@ -1,4 +1,11 @@
 """
+
+Team : Unsupervised Men
+Sukirat Singh Dhillon, 230155722
+Akshay ArulKrishnan , 230158634
+Karsten Keiji Qi-Zhi Ngai-Natsuhara,230165205
+Amaan Hingora, 230156282
+
 Phase 2: Teammate Qualifying Gap Analysis
 ==========================================
 For every race weekend, pairs each driver with their teammate (same team)

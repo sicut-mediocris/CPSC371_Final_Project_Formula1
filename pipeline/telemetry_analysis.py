@@ -1,4 +1,10 @@
 """
+Team : Unsupervised Men
+Sukirat Singh Dhillon, 230155722
+Akshay ArulKrishnan , 230158634
+Karsten Keiji Qi-Zhi Ngai-Natsuhara,230165205
+Amaan Hingora, 230156282
+
 Phase 4: Telemetry Skill Signals
 ==================================
 Extracts three driver skill signals from per-meter qualifying lap telemetry
