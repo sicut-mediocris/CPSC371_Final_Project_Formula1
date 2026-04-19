@@ -1,6 +1,6 @@
 # F1 Driver Skill Decomposition Engine
 
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen) ![Python](https://img.shields.io/badge/Pipeline-Python%20%7C%20FastF1-yellow)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen) ![Python](https://img.shields.io/badge/Pipeline-Python%20%7C%20FastF1-yellow) ![ML](https://img.shields.io/badge/ML-XGBoost%20%7C%20scikit--learn-orange)
 
 ## What We're Building
 
@@ -22,6 +22,7 @@ We collect seven years of FastF1 data (2018–2024), extract several skill signa
 | 4 | Telemetry signals — brake points, corner speed, throttle application | Done |
 | 5 | Tire degradation & race craft score | Done |
 | 6 | Elo-style composite rating across all signals | Done |
+| 7 | Supervised ML model — predict race finishing position from skill signals | Done |
 
 For a summary of what the completed phases actually found, see **[RESULTS.md](RESULTS.md)**.
 
@@ -265,12 +266,37 @@ Every driver starts at 1500. For each race weekend we run the qualifying head-to
 
 ---
 
+## Running Phase 7 — Race Position Predictor (ML)
+
+Trains two models — a Ridge regression and an XGBoost regressor — to predict each driver's race finishing position using the skill signals built in Phases 2–6.
+
+```bash
+python pipeline/race_predictor.py
+```
+
+**What you get:**
+- `data/race_predictions.parquet` — predicted vs actual finishing position for every driver-race in the 2023–2024 test set
+- `data/charts/ml/feature_importance.png` — XGBoost feature importance (which signals matter most)
+- `data/charts/ml/pred_vs_actual.png` — scatter of predicted vs actual position on the test set
+- `data/charts/ml/model_comparison.png` — MAE bar chart comparing baseline, Ridge, and XGBoost
+- `data/charts/ml/ridge_coefficients.png` — Ridge coefficients (shows direction of each feature's effect)
+- `data/charts/ml/driver_errors.png` — which drivers the model gets most wrong about
+
+**How it works:**
+
+Features are the season-level skill signals (QualiRating, SectorScore, RaceCraftScore, SeasonStartElo) plus two race-specific inputs: GridPosition (where the driver starts) and TeamAvgFinish (the constructor's average finish that season, used as a car-strength proxy). The train/test split is temporal — trained on 2018–2022, tested on 2023–2024 — so no future information leaks into the training data.
+
+The Ridge regression gives an interpretable linear baseline: you can read off the coefficients and see that a one-unit improvement in QualiRating nudges the predicted finish by X positions. XGBoost is the main model and captures non-linear interactions (e.g., a high-Elo driver starting from pole behaves differently from a low-Elo driver starting from pole). Both are compared against a naive baseline that just predicts the mean finishing position every time.
+
+---
+
 ## Tech Stack
 
 | Layer | Tools |
 |---|---|
 | Data | FastF1, Pandas, NumPy, PyArrow |
-| ML / ratings | scikit-learn, SciPy |
+| Ratings / signals | SciPy (linear regression), custom Elo |
+| ML model | XGBoost, scikit-learn (Ridge, StandardScaler, metrics) |
 | Visualisation | Matplotlib |
 
 ---

@@ -186,4 +186,44 @@ Hamilton's overall score dropped 0.203 points from 2018 to 2024. His S2 score in
 
 ---
 
+## Phase 7 — Supervised ML: Race Position Predictor
+
+**Method**: We used the skill signals built across Phases 2–6 as input features to a supervised regression model that predicts each driver's finishing position in a race. Two models were trained: a Ridge regression (linear, interpretable) and an XGBoost gradient-boosted tree (non-linear, higher capacity). The train/test split is temporal — all data from 2018–2022 is used for training, and 2023–2024 is held out as the test set so the model is never evaluated on data it could have indirectly seen.
+
+**Features**:
+
+| Feature | Source | What it captures |
+|---------|--------|-----------------|
+| `QualiRating` | Phase 2 | Season-level qualifying pace vs teammate |
+| `SectorScore` | Phase 3 | Season-level sector performance |
+| `RaceCraftScore` | Phase 5 | Tyre management + lap-time consistency |
+| `SeasonStartElo` | Phase 6 | Accumulated driver rating entering the season |
+| `GridPosition` | Phase 1 | Where the driver starts this specific race |
+| `TeamAvgFinish` | Phase 1 | Constructor's average finish this season (car proxy) |
+
+The first four are season-level signals capturing driver skill independent of car. The last two are race-specific: grid position (the result of qualifying) and team average finish (a proxy for how fast the car is relative to the field that season).
+
+### Model performance — 2023–2024 test set (912 driver-race rows)
+
+| Model | MAE | Notes |
+|-------|-----|-------|
+| Baseline (predict mean = P10.4) | 4.99 positions | No skill signal used at all |
+| Ridge regression | **3.09 positions** | 38% improvement over baseline |
+| XGBoost | 3.13 positions | 37% improvement over baseline |
+| XGBoost within ±3 positions | 58.6% | — |
+| XGBoost within ±5 positions | 83.7% | — |
+| XGBoost RMSE | 4.12 | — |
+
+### Notable findings
+
+- **The models cut error by ~38% over the naive baseline**, which confirms that the skill signals we built are actually predictive — knowing a driver's qual rating, sector scores, and race craft score tells you something real about where they'll finish, above and beyond just guessing the field average.
+- **Ridge slightly edged XGBoost on MAE (3.09 vs 3.13)**, which is surprising. It suggests the relationship between these features and finishing position is largely linear — XGBoost's extra complexity doesn't help much here, which is actually a good sign for the interpretability of the features.
+- **Pérez was the hardest driver to predict** (avg error 4.43 positions). This makes sense given how inconsistent his results were in 2023–2024 — he had genuinely great races and genuinely bad ones in the same car, which no season-level signal can capture.
+- **Ricciardo was the easiest to predict** (avg error 1.88 positions). He returned mid-field with RB and was consistently mid-field — his results were highly predictable from his skill and car signals with very little variance.
+- **Verstappen was also relatively easy to predict** (avg error 3.04) despite being the most skilled driver in the dataset. Consistent dominance is actually easier to model than inconsistency — when a driver always finishes in a narrow band of positions, the model locks in quickly.
+- **The biggest single misses were all retirements or penalty-driven results** — Norris finishing P20 at the 2024 Austrian GP (model predicted P3), Leclerc's disqualification at the 2023 São Paulo GP (predicted P5, finished classified P20). The model has no visibility into mechanical failures or stewarding decisions, which is a fundamental ceiling on how accurate any feature-based predictor can be.
+- **GridPosition was almost certainly the most important feature** in the XGBoost model — this is expected in F1, where starting position has an outsized effect on where you finish. The more interesting signal is that the driver skill features still add meaningful predictive value *on top of* grid position, which validates the whole pipeline.
+
+---
+
 *CPSC 371 — F1 Driver Skill Decomposition Engine*
