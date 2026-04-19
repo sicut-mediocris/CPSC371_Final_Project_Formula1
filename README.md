@@ -1,6 +1,5 @@
 # F1 Driver Skill Decomposition Engine
 
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen) ![Python](https://img.shields.io/badge/Pipeline-Python%20%7C%20FastF1-yellow) ![ML](https://img.shields.io/badge/ML-XGBoost%20%7C%20scikit--learn-orange)
 
 ## What We're Building
 
