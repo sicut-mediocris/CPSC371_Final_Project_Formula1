@@ -72,7 +72,7 @@ Formula1/
 │
 ├── RESULTS.md                   # Plain-English summary of findings so far
 ├── explore.ipynb                # Early FastF1 exploration notebook
-└── CLAUDE.md                    # Full phase-by-phase implementation spec
+
 ```
 
 ---
